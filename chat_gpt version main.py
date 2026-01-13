@@ -1,38 +1,58 @@
 # %%
 
 # package imports
+import tiktoken
 from openai import OpenAI
 import time
 import pickle
 import sys
+import json
 from pathlib import Path
 import pandas as pd
 import numpy as np
 from dotenv import load_dotenv
 
-# %%
-
 # local imports
 from prompt_writing_functions import split_vector, glue_to_json, write_initial_prompt
 from data_import import data_import_cod_vector
-from llm_output_processing_functions import json_list_to_df
+from llm_output_processing_functions import json_list_to_df, extract_logprobs_assuming_json
 
 
 # %%
+# -------------------------------------------------------------------
+# Special section to find out token number of "none"
+# This part is not 100% essential for code beyond
+# -------------------------------------------------------------------
 
-# ---Update the name of data_import.py file; comment the one not in use---
-# from data_import import load_cod_data
+encoding = tiktoken.encoding_for_model(model)
+text = "none"
+tokens = encoding.encode(text)  # 12851 is the code for "none"
+
+# %%
+# -------------------------------------------------------------------
+# Inputs / Run Settings
+# -------------------------------------------------------------------
 
 _ = load_dotenv()
 
 client = OpenAI()     # uses OPENAI_API_KEY from .env
 
+
 # set max chunk size... this might need refining based on what API seems to accept
 max_chunk_size = 12
 sleep_time_between_chunks = 0
 model = "gpt-4o-2024-08-06"
-output_name = "output_openai_gpt_4o_logprobs"
-output_name_csv = "output_openai_gpt_4o_logprobs"
+output_name = "output_openai_gpt_4o_none_-100"
+output_name_csv = "output_openai_gpt_4o_none_-100"
+
+extra_llm_create_kwargs = {
+    "logprobs": True,
+    "temperature": 0,
+    "logit_bias": {
+        12851: 100
+    }  # <-- setting token "none" to be always picked!
+}
+
 
 # the options are taken from the following paper...
 # https://pmc.ncbi.nlm.nih.gov/articles/PMC3229033/#:~:text=Current%20smokers%20had%20significantly%20higher,23.93)%2C%20smoking%2Drelated%20cancers
@@ -71,7 +91,6 @@ llm_output = [None] * len(prompts_list)
 # output RDS equivalent
 output_path = Path("./Data") / f"{output_name}.pkl"
 
-
 # %%
 
 # -------------------------------------------------------------------
@@ -88,8 +107,7 @@ for i in vectors:
             {"role": "system", "content": system_prompt},
             {"role": "user", "content": prompts_list[i]},
         ],
-        logprobs=True,
-        temperature=0
+        **extra_llm_create_kwargs
     )
 
     # Extract response text
@@ -107,43 +125,6 @@ for i in vectors:
 # -------------------------------------------------------------------
 # The final output as a single DataFrame:
 # -------------------------------------------------------------------
-
-# This function is making some huge assumptions about the structure so be careful!
-
-# assumes...
-# 1. each open curly brace is a new "guess"
-# 2. the guesses start from the first curly brace
-# 3. the logprobs inside the curly braces contains no noise (i.e. every token is added apart from curly brace themselves)
-
-# ...and kind of nesting in JSON structure will break this
-
-
-def extract_logprobs_assuming_json(token_data):
-
-    # Build DataFrame
-    df = pd.DataFrame({
-        "token": [t.token for t in token_data],
-        "logprob": [t.logprob for t in token_data],
-    })
-
-    df["open_brace_count"] = df["token"].str.count(r"\{")
-    df["close_brace_count"] = df["token"].str.count(r"\}")
-    df["open_brace_cum"] = df["open_brace_count"].cumsum()
-
-    # trim down the df
-    json_start = (df["open_brace_count"] > 0).values.argmax()
-    is_close_brace = (df["close_brace_count"] > 0).values
-    json_end = len(is_close_brace) - is_close_brace[::-1].argmax() - 1
-    df = df.iloc[json_start:json_end,]
-
-    # zeroise logprobs for curly brackets as they can false distort
-    df["logprob"] = df["logprob"].where(
-        (df["token"].str.count(r"\{") + df["token"].str.count(r"\}")) == 0,
-        0
-    )
-    lp = df.groupby("open_brace_cum")["logprob"].sum("logprob").values
-    return lp
-
 
 # %%
 

@@ -53,3 +53,40 @@ def json_list_to_df(output_list: List[str]) -> pd.DataFrame:
 
         # i = i + 1
     return pd.DataFrame(rows)
+
+
+# This function is making some huge assumptions about the structure so be careful!
+
+# assumes...
+# 1. each open curly brace is a new "guess"
+# 2. the guesses start from the first curly brace
+# 3. the logprobs inside the curly braces contains no noise (i.e. every token is added apart from curly brace themselves)
+
+# ...and kind of nesting in JSON structure will break this
+
+
+def extract_logprobs_assuming_json(token_data):
+
+    # Build DataFrame
+    df = pd.DataFrame({
+        "token": [t.token for t in token_data],
+        "logprob": [t.logprob for t in token_data],
+    })
+
+    df["open_brace_count"] = df["token"].str.count(r"\{")
+    df["close_brace_count"] = df["token"].str.count(r"\}")
+    df["open_brace_cum"] = df["open_brace_count"].cumsum()
+
+    # trim down the df
+    json_start = (df["open_brace_count"] > 0).values.argmax()
+    is_close_brace = (df["close_brace_count"] > 0).values
+    json_end = len(is_close_brace) - is_close_brace[::-1].argmax() - 1
+    df = df.iloc[json_start:json_end,]
+
+    # zeroise logprobs for curly brackets as they can false distort
+    df["logprob"] = df["logprob"].where(
+        (df["token"].str.count(r"\{") + df["token"].str.count(r"\}")) == 0,
+        0
+    )
+    lp = df.groupby("open_brace_cum")["logprob"].sum("logprob").values
+    return lp

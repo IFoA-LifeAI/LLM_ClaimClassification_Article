@@ -1,0 +1,37 @@
+,cause_of_death,category,logprobs
+0,Malignant neoplasm Intrahepatic bile duct carcinoma,pancreatic cancer,-16.250793906491808
+1,Car occupant injured in noncollision transport accident Driver injured in traffic accident,None,-19.250267502800213
+2,Nocardiosis unspecified,None,-0.9741169634836808
+3,Deletion from autosomes unspecified,None,-0.003616817813764328
+4,Small kidney unspecified,None,-0.10772463485403705
+5,Malignant neoplasm Bladder unspecified,bladder cancer,-7.004546506550469e-05
+6,Fetus and newborn affected by maternal use of alcohol,None,-0.0017261678793261126
+7,Other specified disturbances of cerebral status of newborn,None,-0.0011092196766213647
+8,Pilonidal cyst without abscess,None,-0.00035176198704789385
+9,Other specified disorders of breast,None,-0.002496417726291611
+10,Encephalopathy unspecified,None,-0.004668770482751938
+11,Methaemoglobinaemia unspecified,None,-0.00012036459528985688
+12,Mucopolysaccharidosis type II,None,-21.750981146044637
+13,Lichen planus unspecified,None,-0.22543677494381598
+14,Pedal cyclist injured in collision with two- or three-wheeled motor vehicle Passenger injured in traffic accident,None,-0.0337305004669588
+15,Pulmonary candidiasis,None,-0.20081078777832317
+16,Other and unspecified symptoms and signs involving cognitive functions and awareness,None,-0.0012189890568947703
+17,Cleft palate unspecified,None,-0.00021709850285844823
+18,Congenital malformation syndromes involving early overgrowth,None,-0.0002542263944462775
+19,Thalassaemia unspecified,None,-0.00017950822225998309
+20,Malignant neoplasm Ill-defined sites within the digestive system,None,-0.36771142912598975
+21,Other diseases of larynx,None,-0.4193608434889171
+22,Other specified noninfective disorders of lymphatic vessels and lymph nodes,None,-0.00017033246011521896
+23,GM2 gangliosidosis,None,-0.00021853260889770354
+24,Occupant of heavy transport vehicle injured in noncollision transport accident Person on outside of vehicle injured in nontraffic accident,None,-20.502818317863415
+25,Abnormal weight loss,None,-0.16030729822772116
+26,Disorder of parathyroid gland unspecified,None,-0.0013392245200947173
+27,Hypothyroidism unspecified,None,-0.0003904885126644331
+28,Carcinoma in situ of breast unspecified,None,-0.0076390987475463135
+29,Motorcycle rider injured in collision with railway train or railway vehicle Driver injured in nontraffic accident,None,-0.00045721142686261373
+30,Pedal cyclist injured in noncollision transport accident Passenger injured in nontraffic accident,None,-0.00010826430346355664
+31,Malignant neoplasm Lower gum,oral cavity cancer,-0.03844940090237969
+32,Sepsis of newborn due to streptococcus group B,None,-0.0022391719715955105
+33,Other bacterial infections of unspecified site,None,-0.00016027531191298294
+34,Sequelae of other specified infectious and parasitic diseases,None,-0.00017539114824671742
+35,Extrapyramidal and movement disorder unspecified,None,-0.0001561553080904332
