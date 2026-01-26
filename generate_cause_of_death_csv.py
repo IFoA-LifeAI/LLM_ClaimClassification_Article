@@ -1,11 +1,25 @@
+
 # %%
+from pathlib import Path
 import pandas as pd
 import numpy as np
 import re
-from pathlib import Path
+
+# inputs
+
+seed = 1
+test_n = 1000
+
+filepaths = dict(
+    all_cause_of_death_input=Path("./Data/Raw/34506561512084822.csv"),
+    human_classification_input=Path("./Data/Raw/Human Classification v2.xlsx"),
+    output=Path("./Data/cause_of_death.csv")
+)
 
 
-def data_import_cod_vector(fp=Path("./Data/34506561512084822.csv")):
+# import causes of death
+
+def data_import_cod_vector(fp):
     # Set random seed
     np.random.seed(1)
 
@@ -51,3 +65,41 @@ def data_import_cod_vector(fp=Path("./Data/34506561512084822.csv")):
         cod_vector, size=len(cod_vector), replace=False)
 
     return cod_vector
+
+
+cod_vector = data_import_cod_vector(
+    fp=filepaths.get("all_cause_of_death_input")
+)
+
+# read in human picks and attach
+
+human_class_df = pd.read_excel(
+    filepaths.get("human_classification_input")
+).set_index("cause_of_death")
+
+empty_picks = pd.DataFrame(
+    dict(
+        cause_of_death=pd.Series(cod_vector).str.lower(),
+        category_human="none"
+    )).set_index("cause_of_death")
+
+human_class_df = human_class_df.combine_first(empty_picks)
+
+# assign to train or test
+
+tt = pd.Series(
+    ["train"] * test_n + ["test"] * (len(human_class_df) - test_n)
+).sample(
+    n=len(human_class_df),
+    replace=False,
+    ignore_index=True,
+    random_state=seed
+)
+tt.index = human_class_df.index
+human_class_df["train_test"] = tt
+
+# save output
+
+human_class_df.to_csv(filepaths.get("output"))
+
+# %%
