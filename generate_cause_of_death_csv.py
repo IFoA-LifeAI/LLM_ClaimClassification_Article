@@ -88,7 +88,7 @@ human_class_df = human_class_df.combine_first(empty_picks)
 # assign to train or test
 
 tt = pd.Series(
-    ["train"] * test_n + ["test"] * (len(human_class_df) - test_n)
+    ["train"] * (len(human_class_df) - test_n) + ["test"] * test_n
 ).sample(
     n=len(human_class_df),
     replace=False,
