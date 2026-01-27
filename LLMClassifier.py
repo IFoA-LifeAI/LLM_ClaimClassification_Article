@@ -9,6 +9,11 @@ from openai import OpenAI
 
 
 class LLMClassifier:
+    """
+    A zero-shot text classifier that leverages OpenAI's Structured Outputs (JSON Schema)
+    to categorize data while extracting confidence scores from logprobs.
+    """
+
     def __init__(
         self,
         options: List[str],
@@ -17,6 +22,16 @@ class LLMClassifier:
         model: str = "gpt-4o-2024-08-06",
         extra_kwargs: Optional[Dict[str, Any]] = None
     ):
+        """
+        Initializes the classifier with schema definitions and API settings.
+
+        Args:
+            options: List of valid category labels.
+            input_field: The key name for the input text in the JSON schema.
+            category_field: The key name for the predicted label in the JSON schema.
+            model: OpenAI model string (must support Structured Outputs).
+            extra_kwargs: Additional parameters for the ChatCompletion call (e.g., max_tokens).
+        """
         self.client = OpenAI()
         self.options = options if "none" in options else options + ["none"]
         self.input_field = input_field
@@ -59,44 +74,45 @@ class LLMClassifier:
 
     def _extract_label_logprobs(self, logprob_content: List[Any], expected_count: int) -> np.ndarray:
         """
-        Uses cumulative brace counting to sum logprobs for each JSON object.
-        Skips the root wrapper and aligns directly with the parsed items.
+        Sums logprobs per JSON object using brace counting. 
+        Aligns the last N groups with the expected row count.
         """
         df = pd.DataFrame({
             "token": [t.token for t in logprob_content],
             "logprob": [t.logprob for t in logprob_content],
         })
 
-        # Every '{' starts a new group.
-        # Group 1 = {"items": [
-        # Group 2 = { "input": ..., "category": ... }
+        # Count opening braces to group tokens by JSON object
         df["group_id"] = df["token"].str.count(r"\{").cumsum()
-
-        # Sum logprobs by group
-        # Since structural tokens are ~0 logprob, they won't dilute the 'decision' token
         group_sums = df.groupby("group_id")["logprob"].sum().tolist()
 
-        # Alignment logic: The items are always the LAST 'expected_count' groups
-        if len(group_sums) > expected_count:
-            item_logprobs = group_sums[-expected_count:]
-        else:
-            # Fallback for unexpected tokenization
-            item_logprobs = np.pad(group_sums, (0, max(
-                0, expected_count - len(group_sums))), constant_values=np.nan)
+        # Structured output root is always group 1, so items are the trailing groups
+        if len(group_sums) >= expected_count:
+            return np.array(group_sums[-expected_count:])
 
-        return np.array(item_logprobs)
+        return np.pad(group_sums, (0, max(0, expected_count - len(group_sums))), constant_values=np.nan)
 
-    def run(self, data_list: List[str], chunk_size: int = 12, checkpoint_path: Optional[str] = None) -> pd.DataFrame:
-        """Main execution loop with chunking and Structured Output."""
+    def run(self,
+            data_list: List[str],
+            chunk_size: int = 12,
+            checkpoint_path: Optional[str] = None,
+            extra_info: Optional[str] = None) -> pd.DataFrame:
+        """
+        Main execution loop.
+        :param extra_info: Additional context or rules for the system prompt.
+        """
         all_responses = []
+
+        # Construct the system message with optional extra info
         sys_msg = f"Classify the provided {self.input_field} list into the {self.category_field} categories."
+        if extra_info:
+            sys_msg += f" {extra_info}"
 
         for i in range(0, len(data_list), chunk_size):
             chunk = data_list[i: i + chunk_size]
             payload = json.dumps(
                 {"items": [{self.input_field: item} for item in chunk]})
 
-            # Pass all arguments, ensuring logprobs is only passed once
             resp = self.client.chat.completions.create(
                 model=self.model,
                 messages=[
@@ -118,10 +134,8 @@ class LLMClassifier:
         return self._assemble(all_responses)
 
     def _assemble(self, responses) -> pd.DataFrame:
-        """Parses the raw API responses into a single combined DataFrame."""
         chunk_dfs = []
         for res in responses:
-            # Structured output ensures valid JSON, no cleaning needed
             data = json.loads(res.message.content)
             df = pd.DataFrame(data["items"])
 
