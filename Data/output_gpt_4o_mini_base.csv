@@ -1,0 +1,1001 @@
+cause_of_death,category,confidence
+46xx true hermaphrodite,none,0.9999988231444196
+abdominal aortic aneurysm ruptured,none,0.9999909261287162
+abnormal uterine and vaginal bleeding unspecified,none,0.9999989423479485
+abnormal weight loss,none,0.9999987783497845
+abscess of bartholin gland,none,0.9999960814671064
+abscess of lung with pneumonia,none,0.9998415274892719
+abscess of mediastinum,none,0.99999901675686
+abscess of prostate,none,0.9999996871837232
+abscess of salivary gland,none,1.0
+accident on board watercraft without accident to watercraft not causing drowning and submersion merchant ship,none,0.9999973782692256
+accident on board watercraft without accident to watercraft not causing drowning and submersion other powered watercraft,none,0.9999981527181214
+accident on board watercraft without accident to watercraft not causing drowning and submersion unspecified watercraft,none,0.9999985103284967
+accident to commercial fixed-wing aircraft injuring occupant,none,0.9999991807550489
+accident to watercraft causing drowning and submersion canoe or kayak,none,0.9999976311098983
+accident to watercraft causing drowning and submersion other unpowered watercraft,none,0.99999901675686
+accident to watercraft causing other injury other powered watercraft,none,0.9999986295320168
+achondroplasia,none,0.9999948894358105
+acne vulgaris,none,0.9999968710952268
+acquired coagulation factor deficiency,none,0.9999986591462183
+acquired deformity of chest and rib,none,0.999999493571153
+acquired deformity of limb unspecified,none,0.999999612774776
+acquired deformity of musculoskeletal system unspecified,none,0.9999983463303752
+acquired hydrocephalus of newborn 2016 onwards,none,0.9999644635065915
+actinomycetoma,none,0.9999951278421861
+acute amoebic dysentery,none,0.9999913133504059
+acute and subacute haemorrhagic leukoencephalitis [hurst],none,0.9999799003239441
+acute appendicitis other and unspecified,none,0.9999989423479343
+acute appendicitis with generalized peritonitis - 2008 classification,none,0.9999973334746837
+acute bronchiolitis due to other specified organisms,none,0.9997673606134291
+acute bronchitis due to other specified organisms,none,0.999993026983088
+acute bronchitis due to respiratory syncytial virus,none,0.996814768503213
+acute cystitis,none,0.9999995679801056
+acute disseminated encephalitis,none,0.9999972734996952
+acute endocarditis unspecified,none,0.9999989423479343
+acute gastroenteropathy due to norwalk agent,none,0.9999969310701768
+acute hepatitis b without delta-agent with hepatic coma,none,0.9998383398599703
+acute hepatitis e,none,0.9999992551639639
+acute inflammation of orbit,none,0.9999979887201011
+acute laryngitis,none,0.9999907621319094
+acute laryngotracheitis,none,0.9999948894358105
+acute meningococcaemia,none,0.9999000978842453
+acute monoblastic/monocytic leukaemia,none,0.9999506220351545
+acute myelomonocytic leukaemia,none,0.999994517392844
+acute nephritic syndrome focal and segmental glomerular lesions,none,0.9999735971106233
+acute renal failure unspecified,none,0.9999989871425767
+acute renal failure with tubular necrosis,none,0.9999968414810924
+acute salpingitis and oophoritis,none,0.9999988679390284
+acute sinusitis unspecified,none,0.999997720699025
+acute thyroiditis,none,0.9999996871837232
+acute tonsillitis due to other specified organisms,none,0.9999959774443045
+acute tracheitis,none,0.9999992551639781
+acute transmural myocardial infarction of other sites,ischaemic heart disease,0.976953631689834
+acute vascular disorders of intestine,none,0.9999962902592786
+adjustment disorders,none,0.9999955598599066
+adrenogenital disorder unspecified,none,0.9999987935301421
+adult hypertrophic pyloric stenosis,none,0.9999737907174691
+alcoholic cardiomyopathy,none,0.9148525860757646
+alcoholic hepatitis,none,0.9999969158899328
+aluminosis of lung,none,0.5311806058545034
+alzheimer disease unspecified,none,0.9999938614034084
+amniotic fluid embolism,none,0.9999995679801056
+anaemia due to enzyme disorder unspecified,none,0.999996722277757
+anaemia unspecified,none,0.9999984207392423
+anal prolapse,none,0.9999998063873693
+anaplastic large cell lymphoma alk-negative,none,0.999998510328511
+anaplastic large cell lymphoma alk-positive,none,0.9999994191622202
+anencephaly,none,0.9999998063873693
+aneurysm and dissection of carotid artery,none,0.9999936229974057
+aneurysm and dissection of iliac artery,none,0.9999938317891073
+aneurysm and dissection of unspecified site,none,0.9999959774441339
+aneurysm of heart,none,0.9999376887853173
+angioimmunoblastic t-cell lymphoma,none,0.999999612774776
+annular pancreas,none,0.9999998063873693
+anoxic brain damage not elsewhere classified,none,0.999995604654426
+anthrax sepsis,none,0.999999612774776
+antibody deficiency with near-normal immunoglobulins or with hyperimmunoglobulinaemia,none,0.9999958734213144
+anticoagulant antagonists vitamin k and other coagulants,none,0.999997259065869
+aortic aneurysm of unspecified site without mention of rupture,none,0.9999970206592552
+aplastic anaemia unspecified,none,0.9999401471168082
+appendicular concretions,none,0.9999831628116249
+arnold-chiari syndrome,none,0.9999973182942914
+arthritis unspecified,none,0.9999787523600736
+asphyxia,none,0.9999917157530784
+ataxic gait,none,0.9999963198735673
+atherosclerosis of other arteries,none,0.9958115959486826
+atherosclerotic heart disease,ischaemic heart disease,0.962661475840628
+atresia and stenosis of ureter,none,0.999997556701033
+atresia of bile ducts,none,0.9999992551639781
+atresia of foramina of magendie and luschka,none,0.9999612155145027
+atresia of oesophagus with tracheo-oesophageal fistula,none,0.9999820307694155
+atresia of oesophagus without fistula,none,0.9999969158898049
+atresia of pulmonary artery,none,1.0
+atrioventricular block first degree,none,0.99999807830926
+atrioventricular septal defect,none,0.9999974374976551
+autoimmune hepatitis,none,0.999999448776502
+autoimmune polyglandular failure,none,0.9999986295320026
+autonomic dysreflexia,none,0.9997813150407707
+b-cell lymphoma unspecified,none,0.9999979887200443
+background retinopathy and retinal vascular changes,none,0.9999918349554332
+bacterial intestinal infection unspecified,none,0.999961617904211
+bacterial meningoencephalitis and meningomyelitis not elsewhere classified,none,0.9999860540152538
+bacterial pneumonia unspecified,none,0.9999935782030177
+benign intracranial hypertension,none,0.9999888548931097
+benign lipomatous neoplasm of intrathoracic organs,none,0.9999948150271493
+benign neoplasm adrenal gland,none,0.9999960814670638
+benign neoplasm appendix,none,0.9999889293004037
+benign neoplasm bone and articular cartilage unspecified,none,0.9999812707666148
+benign neoplasm caecum,none,0.9999952022506433
+benign neoplasm connective and other soft tissue of pelvis,none,0.9999862028305959
+benign neoplasm extrahepatic bile ducts,none,0.9999961262616491
+benign neoplasm lacrimal gland and duct,none,0.9999942190121354
+benign neoplasm lower jaw bone,none,0.9999961262615923
+benign neoplasm lymph nodes,none,0.9999967518921153
+benign neoplasm nasopharynx,none,0.999992415788822
+benign neoplasm parotid gland,none,0.9999921477694242
+benign neoplasm penis,none,0.9999935334088165
+benign neoplasm pituitary gland,none,0.9999926989889403
+benign neoplasm spinal cord,none,0.9999913133504059
+benign paroxysmal vertigo,none,0.9999931757999936
+bilateral inguinal hernia with gangrene,none,0.9999960366726083
+biliary cirrhosis unspecified,none,0.9999949342302004
+biliary cyst,none,0.9999988527586979
+bipolar affective disorder unspecified,none,0.9999998063873693
+birth asphyxia unspecified,none,0.999999493571153
+birth injury unspecified,none,0.9999996871837232
+bronchopulmonary dysplasia originating in the perinatal period,none,0.9890019607959969
+brucellosis unspecified,none,0.9999998063873693
+bullous pemphigoid,none,0.9999879012748252
+bursopathy unspecified,none,0.9999989423479343
+bus occupant [any] injured in other specified transport accidents,none,0.9999981527180646
+bus occupant injured in collision with fixed or stationary object driver injured in traffic accident,none,0.9999955454259772
+bus occupant injured in collision with fixed or stationary object passenger injured in traffic accident,none,0.9999975270868072
+bus occupant injured in noncollision transport accident person injured while boarding or alighting,none,0.9999892572941108
+bus occupant injured in noncollision transport accident person on outside of vehicle injured in nontraffic accident,none,0.9999991063461252
+bus occupant injured in noncollision transport accident unspecified bus occupant injured in nontraffic accident,none,0.9999958878553196
+byssinosis,none,0.9859278209343808
+calcium-channel blockers,none,0.9999966030744645
+calculus of bile duct without cholangitis or cholecystitis,none,0.9626558168787069
+candidal meningitis,none,0.999999448776502
+candidal stomatitis,none,0.9999993743675585
+candidiasis of vulva and vagina,none,0.9999991359604119
+candidiasis unspecified,none,0.9999991807550489
+car occupant [any] injured in other specified transport accidents,none,0.999999225549702
+car occupant injured in collision with car pick-up truck or van driver injured in nontraffic accident,none,0.999994859821749
+car occupant injured in collision with car pick-up truck or van person on outside of vehicle injured in nontraffic accident,none,0.999996051852839
+car occupant injured in collision with car pick-up truck or van unspecified car occupant injured in nontraffic accident,none,0.9999854283910826
+car occupant injured in collision with car pick-up truck or van unspecified car occupant injured in traffic accident,none,0.9999917309329451
+car occupant injured in collision with heavy transport vehicle or bus person injured while boarding or alighting,none,0.9999911797143607
+car occupant injured in collision with heavy transport vehicle or bus unspecified car occupant injured in traffic accident,none,0.9999951134081352
+car occupant injured in collision with pedestrian or animal person injured while boarding or alighting,none,0.9999903005022642
+car occupant injured in collision with railway train or railway vehicle driver injured in nontraffic accident,none,0.9999981231038496
+car occupant injured in collision with railway train or railway vehicle passenger injured in traffic accident,none,0.999992326946604
+car occupant injured in noncollision transport accident passenger injured in nontraffic accident,none,0.9999994191622202
+car occupant injured in noncollision transport accident passenger injured in traffic accident,none,0.999999493571153
+car occupant injured in noncollision transport accident person on outside of vehicle injured in traffic accident,none,0.9999989871425625
+carbonic-anhydrase inhibitors,none,0.9999985103284967
+carcinoma in situ bronchus and lung,lung cancer,0.8311357887793409
+carcinoma in situ colon,none,0.6224512327300404
+carcinoma in situ other and unspecified parts of intestine,none,0.9999960966474799
+carcinoma in situ other and unspecified urinary organs,none,0.9999961262616491
+carcinoma in situ prostate,prostate cancer,0.9706856417284083
+carcinoma in situ skin of scalp and neck,none,0.9999989423479343
+carcinoma in situ stomach,none,0.9984984556411001
+cardiac arrhythmia unspecified,none,0.9999973630889464
+cardiac catheterization,none,0.9999998063873693
+cardiomyopathy in the puerperium,none,0.9999920285666911
+cardiovascular disease unspecified,none,0.9999832523984181
+cataract unspecified,none,0.9999988975533223
+catatonic schizophrenia,none,0.9999998063873693
+cefalosporins and other beta-lactam antibiotics,none,0.9999975567010756
+cellulitis of external ear,none,0.9999988231444196
+cellulitis of other sites,none,1.0
+cellulitis of trunk,none,0.9999991359603977
+cellulitis unspecified,none,0.9999982271269884
+centrilobular emphysema,pulmonary disease,0.9999106164284453
+cerebral aneurysm nonruptured,none,0.9999761003248073
+cerebral arteritis not elsewhere classified,none,0.9999966774833582
+cerebral infarction due to embolism of precerebral arteries,none,0.9998742857297622
+cervical disc disorder unspecified,none,0.999996335053845
+cervical root disorders not elsewhere classified,none,0.999996603074564
+cervicofacial actinomycosis,none,0.9999903597302318
+chagas disease chronic with digestive system involvement,none,0.9999992551639781
+chronic gastritis unspecified,none,0.9999991359604119
+chronic hepatic failure,none,0.9999998063873693
+chronic inflammatory disease of uterus,none,0.99999901675686
+chronic kidney disease stage 1,none,1.0
+chronic kidney disease stage 2,none,0.9999996871837232
+chronic kidney disease unspecified,none,0.9999992551639639
+chronic lymphocytic leukaemia of b-cell type,none,0.995351252439058
+chronic meningitis,none,1.0
+chronic myelomonocytic leukaemia,none,0.9999969606843282
+chronic obstructive pulmonary disease with acute exacerbation unspecified,pulmonary disease,0.9999971246822367
+chronic obstructive pyelonephritis,none,0.9999968414811066
+chronic respiratory failure,none,0.9978145833332936
+chronic ulcer of skin not elsewhere classified,none,0.9999982271269173
+chylous effusion,none,0.9999995679801056
+coagulation defect unspecified,none,0.9999991359604119
+coeliac disease,none,0.9999998063873693
+complete uterovaginal prolapse,none,0.999999225549702
+complication of labour and delivery unspecified,none,0.9999751322845681
+compression of vein,none,0.9999996871837232
+congenital absence atresia and stenosis of anus without fistula,none,0.9999931165718593
+congenital absence atresia and stenosis of small intestine part unspecified,none,0.9999940998093685
+congenital adrenogenital disorders associated with enzyme deficiency,none,0.999993071777295
+congenital bronchomalacia,none,0.999997779927489
+congenital diaphragmatic hernia,none,0.9999859044523682
+congenital herpesviral [herpes simplex] infection,none,0.9998643483365347
+congenital malformation of lung unspecified,none,0.9999944574184081
+congenital malformation of respiratory system unspecified,none,0.9999940998093685
+congenital malformation of skull and face bones unspecified,none,0.9999929077803638
+congenital malformation of stomach unspecified,none,0.9999964390766273
+congenital malformation of tricuspid valve unspecified,none,0.9999956494490184
+congenital malformation syndromes predominantly involving limbs,none,0.9999875588481467
+congenital mitral insufficiency,none,0.9999649699168598
+congenital pneumonia due to other organisms,none,0.9999893613165689
+congenital pneumonia due to pseudomonas,none,0.9999907173376639
+congenital pulmonary valve insufficiency,none,0.999996275078959
+congenital renal failure,none,0.9999890485034637
+congenital subglottic stenosis,none,0.9999866196649838
+congenital syphilis unspecified,none,0.9999903597304591
+congestive heart failure,none,0.9770186115981626
+constitutional aplastic anaemia,none,0.9999522604460797
+cor triatriatum,none,0.999988646102504
+corpus luteum cyst,none,0.9999847124337296
+cranial nerve disorder unspecified,none,0.9999971095018334
+crohn disease of large intestine,none,0.9999670858953552
+crohn disease unspecified,none,0.999999448776502
+cutaneous abscess furuncle and carbuncle of limb,none,0.9998937511356334
+cystic disease of liver,none,0.9999996871837232
+cystic fibrosis with pulmonary manifestations,none,0.5926329444523544
+cystitis unspecified,none,0.9999985847373477
+decubitus ulcer and pressure area unspecified from 2014 onwards,none,0.999955881183387
+deletion from autosomes unspecified,none,0.9999955302457115
+deletion of short arm of chromosome 4,none,0.9999985103285252
+deletion of short arm of chromosome 5,none,0.999999091165777
+delirium superimposed on dementia,none,1.0
+delirium unspecified,none,0.9999993295729128
+delusional disorder,none,0.9999996871837232
+dermatitis unspecified,none,0.9999400127427834
+developmental disorder of speech and language unspecified,none,0.9999993295729128
+diabetes mellitus in pregnancy pre-existing diabetes mellitus insulin-dependent,none,0.9999904197041944
+discitis unspecified,none,0.9999977055186127
+disease of pulmonary vessels unspecified,none,0.999736851520851
+diseases of mediastinum not elsewhere classified,none,0.9999943533954483
+diseases of the circulatory system complicating pregnancy childbirth and the puerperium,none,0.9999745514614314
+disorder of bone unspecified,none,0.999999493571153
+disorder of brain unspecified,none,0.999999448776502
+disorder of glycoprotein metabolism unspecified,none,0.9999967966865745
+disorder of kidney and ureter unspecified,none,0.9999989423479343
+disorder of mineral metabolism unspecified,none,0.9999988231444054
+disorder of skin and subcutaneous tissue unspecified,none,0.9999979887200443
+disorder of teeth and supporting structures unspecified,none,0.999998703940905
+disorder of thyroid unspecified,none,0.999999493571153
+disorder of trigeminal nerve unspecified,none,0.9999992551639639
+disorders of calcium metabolism,none,0.9999984207392423
+disorders of fatty-acid metabolism,none,0.999998346330361
+disorders of hypoglossal nerve,none,0.9999979143112662
+disorders of pyruvate metabolism and gluconeogenesis,none,0.9999969606842856
+disorders of vagus nerve,none,0.99999901675686
+diverticular disease of intestine part unspecified without perforation or abscess,none,0.9999949342305272
+diverticular disease of small intestine with perforation and abscess,none,0.9999979439255177
+double heterozygous sickling disorders,none,0.9999976014955849
+double inlet ventricle,none,0.999999493571153
+driver of all-terrain or other off-road motor vehicle injured in traffic accident,none,0.999996290259307
+driver of special agricultural vehicle injured in nontraffic accident,none,0.9999970350932343
+driver of special industrial vehicle injured in traffic accident,none,0.9999989871425625
+drug-induced dystonia,none,0.999999493571153
+drug-induced interstitial lung disorders unspecified,none,0.9770058673489213
+drug-induced polyneuropathy,none,0.9999901957336031
+duodenal ulcer acute with perforation,none,0.999999493571153
+duodenal ulcer chronic or unspecified with haemorrhage,none,0.9999830139949589
+duodenal ulcer chronic or unspecified with perforation,none,0.999999493571153
+duplications with other complex rearrangements,none,0.9997305951388931
+during endoscopic examination,none,0.9999995679801056
+during kidney dialysis or other perfusion,none,0.9999996871837232
+dysarthria and anarthria,none,0.9999964390767552
+dyskinesia of oesophagus,none,0.9999653723089031
+dysphasia and aphasia,none,0.9999967222777713
+dystonia unspecified,none,0.9999989423479343
+echinococcosis other and unspecified,none,0.9999888996870445
+echinococcus multilocularis infection unspecified,none,0.9999351112655985
+eclampsia unspecified as to time period,none,0.9999991807550489
+ectodermal dysplasia anhidrotic,none,0.9999660875060663
+ectopic kidney,none,0.9999985399427801
+edwards syndrome unspecified,none,0.9999944870322304
+ehlers-danlos syndrome,none,0.9999942486264195
+embolism and thrombosis of iliac artery,none,0.9996544356173007
+encephalopathy unspecified,none,0.999986783660898
+end-stage renal disease - from 2008 classification,none,0.9999985551231056
+endocardial fibroelastosis,none,0.9999989423479485
+endometriosis unspecified,none,0.999996632688677
+endomyocardial eosinophilic disease,none,0.9999979143112662
+enterocolitis due to clostridium difficile,none,0.9999915517561848
+enteropathy-type intestinal t-cell lymphoma,none,0.9999949790246917
+enteroptosis,none,0.999999448776502
+enterovirus infection unspecified site,none,0.9999961262616065
+eosinophilia,none,0.9999996871837232
+epidermolysis bullosa dystrophica,none,0.9998233709573857
+epidermolysis bullosa unspecified,none,0.9999976759044109
+epilepsy unspecified,none,0.9999676818962293
+erythema annulare centrifugum,none,0.9999857708170031
+essential thrombocytosis - from 2008 classification,none,0.9999926397606637
+extranodal marginal zone b-cell lymphoma of mucosa-associated lymphoid tissue [malt-lyphoma],none,0.999473644706434
+extrapyramidal and movement disorder unspecified,none,0.9999979439254608
+extreme obesity with alveolar hypoventilation,none,0.9998440793350216
+extremely low birth weight,none,0.9999989423479343
+failure to introduce or to remove other tube or instrument,none,0.999999493571153
+fatigue fracture of vertebra,none,0.9999992551639639
+febrile convulsions,none,0.999999493571153
+feeding disorder of infancy and childhood,none,0.9999965582799287
+female genital tract fistula unspecified,none,0.9999991807550347
+fetal alcohol syndrome dysmorphic,none,0.9999364816432068
+fetus and newborn affected by breech delivery and extraction,none,0.999999493571153
+fetus and newborn affected by multiple pregnancy,none,0.9999986591462752
+fetus and newborn affected by placenta praevia,none,0.999997914311252
+fibroblastic disorder unspecified,none,0.9999948150272345
+first degree perineal laceration during delivery,none,0.9999952918396663
+fistula of bile duct,none,0.9999998063873693
+fistula of gallbladder,none,1.0
+fistula of joint,none,1.0
+flaccid tetraplegia,none,0.9999998063873693
+folate deficiency anaemia unspecified,none,0.9999956494488621
+follicular lymphoma grade iiib,none,0.9999950238193271
+follicular lymphoma unspecified,none,0.9999970798876067
+fragile x chromosome,none,1.0
+gangrene and necrosis of lung,none,0.6791330038141651
+gas gangrene,none,0.999999612774776
+gastric ulcer acute without haemorrhage or perforation,none,0.9999759963035013
+giardiasis [lambliasis],none,0.9999974822922302
+glossitis,none,0.999999493571153
+glossodynia,none,0.9999990615514773
+glycogen storage disease,none,0.9999989423479343
+gout due to impairment of renal function,none,0.9999983167161545
+grand mal seizures unspecified with or without petit mal,none,0.9999907621320231
+guillain-barre syndrome,none,0.9999974671118498
+haemangioma any site,none,0.9999996871837232
+haematemesis,none,0.999987379671267
+haematometra,none,0.998480624155977
+haemorrhage of anus and rectum,none,0.9999919541583423
+haemorrhoids unspecified from 2014 onwards - previously in i84,none,0.9999723162652348
+haemothorax,none,1.0
+hallervorden-spatz disease,none,0.999994383009779
+hallux valgus acquired,none,0.9999825220092511
+hepatic failure unspecified,none,0.9999976311098983
+hereditary ataxia unspecified,none,0.9999996871837232
+hereditary lymphoedema,none,0.9999990615514915
+hereditary nephropathy not elsewhere classified diffuse crescentic glomerulonephritis,none,0.9999949197964079
+hereditary spastic paraplegia,none,0.9999992551639781
+hereditary spherocytosis,none,0.9999978695166292
+hidradenitis suppurativa,none,0.9999896149011913
+hirschsprung disease,none,0.999982015587934
+histiocytic and mast cell tumours of uncertain and unknown behaviour,none,0.9999795723346276
+histoplasmosis unspecified,none,0.9999993743675443
+hiv disease resulting in haematological and immunological abnormalities not elsewhere classified,none,0.9999889148673232
+hiv disease resulting in kaposi sarcoma,none,0.9999742379057289
+hiv disease resulting in multiple infections,none,0.9999991063461252
+hiv disease resulting in other malignant neoplasms of lymphoid haematopoietic and related tissue,none,0.9999949645908276
+hiv disease resulting in other types of non-hodgkin lymphoma,none,0.9999982719215704
+hiv disease resulting in other viral infections,none,0.9999990615514915
+hourglass stricture and stenosis of stomach,none,0.9999998063873693
+hydrocele unspecified,none,0.9999928629858515
+hyperglycaemia unspecified,none,0.9999988679390284
+hyperimmunoglobulin e [ige] syndrome,none,0.9999928333717506
+hyperkalaemia,none,0.9999986295319884
+hyperostosis of skull,none,0.999999493571153
+hypersensitivity angiitis,none,0.9990867784091172
+hypertensive heart and renal disease unspecified,none,0.9999979887200443
+hypertensive heart and renal disease with both congestive heart failure and renal failure,none,0.9999852795756426
+hypertensive heart and renal disease with congestive heart failure,none,0.9999951878167191
+hypertensive heart disease with congestive heart failure,none,0.9999973182943056
+hyperuricaemia without signs of inflammatory arthritis and tophaceous disease,none,0.9999912541223392
+hypomania,none,0.9999998063873693
+hypoparathyroidism unspecified,none,0.999998510328511
+hypospadias unspecified,none,0.9999979887200301
+hypostatic pneumonia unspecified,none,0.9578699204850416
+hypotension due to drugs,none,0.9999865900505845
+hypotension unspecified,none,0.9999992551639781
+hypothalamic dysfunction not elsewhere classified,none,0.9999476117345687
+idiopathic acute pancreatitis,none,0.999997869516686
+idiopathic hypotension,none,0.9999952470451893
+idiopathic orofacial dystonia,none,0.9999970350931775
+idiopathic thrombocytopenic purpura,none,0.9999978247221077
+immobility syndrome paraplegic,none,0.9999991807550347
+immunosuppressive agents,none,0.9999981527181214
+incontinentia pigmenti,none,0.9999269460016954
+infarction of spleen,none,0.9999995679801056
+infective dermatitis,none,0.9999969902986366
+infective pericarditis,none,0.9999983759447105
+inflammatory disease of prostate unspecified,none,0.9999955302457826
+inflammatory myopathy not elsewhere classified,none,0.999993578202904
+inflammatory polyarthropathy,none,0.9999703787010522
+influenza with other manifestations virus not identified,none,0.9999979887201154
+influenza with pneumonia other influenza virus identified,none,0.9999899277139905
+ingrowing nail,none,0.9999841612186584
+insulin-dependent diabetes mellitus with coma,none,0.9999815091696869
+interstitial cystitis chronic,none,0.9999991807550489
+interstitial emphysema originating in the perinatal period,none,0.9999899277145731
+interstitial pulmonary disease unspecified,none,0.9999916709588612
+intervertebral disc disorder unspecified,none,0.9999953366339462
+intestinal obstruction due to inspissated milk,none,0.9996873666461548
+intracardiac thrombosis not elsewhere classified,none,0.9999844892100485
+intracerebral haemorrhage in hemisphere subcortical,none,0.9999950686135809
+intracerebral haemorrhage multiple localized,none,0.9998363729409423
+intracranial abscess and granuloma,none,0.9999965582799429
+intracranial nontraumatic haemorrhage of fetus and newborn unspecified,none,0.9999950238191566
+intraductal carcinoma in situ,none,0.999982924408116
+intraspinal abscess and granuloma,none,0.9999978695166718
+intraventricular nontraumatic haemorrhage grade 3 of fetus and newborn,none,0.9999949942049207
+iron deficiency anaemia secondary to blood loss chronic,none,0.9999977206990108
+irradiation cystitis,none,0.9999944870324577
+irritable bowel syndrome without diarrhoea,none,0.9999960518529385
+ischiorectal abscess,none,0.9998491964492654
+joint disorder unspecified,none,0.9999993743675585
+juvenile arthritis with systemic onset,none,0.9999924309690831
+juvenile dermatomyositis,none,0.9999979887201011
+karyotype 47xxx,none,0.9999933397974378
+keratitis unspecified,none,0.999999091165777
+kernicterus unspecified,none,0.999999493571153
+left bundle-branch block unspecified,none,0.9999992999586204
+left sided colitis,none,0.893283954997006
+left ventricular failure,none,0.996823627633573
+legal execution,none,0.9999998063873693
+leukaemia unspecified,none,0.9858483332223363
+leukoplakia and other disturbances of oral epithelium including tongue,none,0.8175368240349596
+lichen planus unspecified,none,0.9997558894228019
+lipid storage disorder unspecified,none,0.9999963646679928
+lipoprotein deficiency,none,0.9999927437832747
+liver disease unspecified,none,1.0
+local antifungal anti-infective and anti-inflammatory drugs not elsewhere classified,none,0.9999782763018091
+local infection of skin and subcutaneous tissue unspecified,none,0.9999990615514773
+localization-related focalpartial symptomatic epilepsy and epileptic syndromes with simple partial seizures,none,0.9993393619993073
+localized swelling mass and lump neck,none,0.9999993743675585
+locked-in syndrome from 2016,none,0.9999993743675585
+lumbar and other intervertebral disc disorders with myelopathy,none,0.9999958134465272
+lymphoid leukaemia unspecified,none,0.9999912837364645
+macleod syndrome,none,0.9999985847373903
+macrocephaly,none,0.9999996871837232
+major histocompatibility complex class ii deficiency,none,0.9999988231444196
+malignant mast cell tumour,none,0.9999989423479343
+malignant neoplasm acoustic nerve,none,0.9999968862756408
+malignant neoplasm anterior floor of mouth,oral cavity cancer,0.8806911357564468
+malignant neoplasm anterior mediastinum,none,0.9999902109135037
+malignant neoplasm anterior two-thirds of tongue part unspecified,oral cavity cancer,0.9667793366514313
+malignant neoplasm anterior wall of bladder,bladder cancer,0.9980707874122983
+malignant neoplasm ascending colon,colorectal cancer,0.9992839955520515
+malignant neoplasm bladder neck,bladder cancer,0.9999768603231101
+malignant neoplasm bones of skull and face,none,0.9999932205942925
+malignant neoplasm border of tongue,oral cavity cancer,0.9932291888963296
+malignant neoplasm broad ligament,none,0.9999939061976811
+malignant neoplasm cerebellum,none,0.9999790803485527
+malignant neoplasm cervical part of oesophagus,esophageal cancer,0.9999908517206341
+malignant neoplasm clitoris,none,0.9999966478690021
+malignant neoplasm conjunctiva,none,0.9999954558370595
+malignant neoplasm connective and soft tissue of abdomen,none,0.9999988231444054
+malignant neoplasm connective and soft tissue of trunk unspecified,none,0.9999970502734802
+malignant neoplasm connective and soft tissue unspecified,none,0.9999975567010045
+malignant neoplasm endocervix,none,0.999766719947341
+malignant neoplasm endocrine pancreas,pancreatic cancer,0.7310568032015423
+malignant neoplasm endometrium,none,0.999993354977656
+malignant neoplasm external lower lip,none,0.8902280376009717
+malignant neoplasm external upper lip,none,0.9964186883326429
+malignant neoplasm extrahepatic bile duct,none,0.9999967670723428
+malignant neoplasm female genital organ unspecified,none,0.99999764629021
+malignant neoplasm frontal lobe,none,0.9999981527180504
+malignant neoplasm gum unspecified,oral cavity cancer,0.9578979038770523
+malignant neoplasm hepatoblastoma,none,0.9999964094625056
+malignant neoplasm ileum,colorectal cancer,0.8175641489812807
+malignant neoplasm ill-defined sites within the respiratory system,none,0.6746706277686482
+malignant neoplasm intestinal tract part unspecified,none,0.6791518679722868
+malignant neoplasm laryngeal cartilage,larynx cancer,0.5882469100043605
+malignant neoplasm larynx unspecified,larynx cancer,0.9999149969660357
+malignant neoplasm lesser curvature of stomach unspecified,stomach cancer,0.8519472768831255
+malignant neoplasm lingual tonsil,oral cavity cancer,0.8237959022338156
+malignant neoplasm male genital organ unspecified,none,0.995925267047947
+malignant neoplasm malignant melanoma of ear and external auricular canal,none,0.999996215850698
+malignant neoplasm malignant melanoma of eyelid including canthus,none,0.999997124682194
+malignant neoplasm malignant melanoma of upper limb including shoulder,none,0.9999943086012691
+malignant neoplasm meckel diverticulum,none,0.9997285542831448
+malignant neoplasm mediastinum part unspecified,none,0.9999960070583849
+malignant neoplasm middle third of oesophagus,esophageal cancer,0.9999175896168251
+malignant neoplasm nasal cavity,none,0.9999968862756266
+malignant neoplasm nasopharynx unspecified,none,0.999996364668007
+malignant neoplasm of other and ill-defined sites abdomen,none,0.9999972734997663
+malignant neoplasm of other and ill-defined sites other ill-defined sites,none,0.9999969310700916
+malignant neoplasm overlapping lesion of brain and other parts of central nervous system,none,0.9999828355663007
+malignant neoplasm overlapping lesion of female genital organs,none,0.9999946214155508
+malignant neoplasm overlapping lesion of larynx,larynx cancer,0.9976733806479575
+malignant neoplasm overlapping lesion of pancreas,pancreatic cancer,0.9992841594760203
+malignant neoplasm overlapping lesion of skin,none,0.9999977206990108
+malignant neoplasm overlapping lesion of tongue,oral cavity cancer,0.9914111910275177
+malignant neoplasm pancreatic duct,pancreatic cancer,0.9999837292052656
+malignant neoplasm parietal lobe,none,0.9999985847373761
+malignant neoplasm pelvic bones sacrum and coccyx,none,0.9999974822922018
+malignant neoplasm peripheral nerves and autonomic nervous system unspecified,none,0.9999942341924096
+malignant neoplasm peripheral nerves of thorax,none,0.9999944574184081
+malignant neoplasm peripheral nerves of upper limb including shoulder,none,0.9999920437470742
+malignant neoplasm posterior wall of nasopharynx,none,0.9999970054788819
+malignant neoplasm primary site unknown so stated,none,0.9999974078834755
+malignant neoplasm skin of ear and external auricular canal,none,0.9999943981898426
+malignant neoplasm skin of lip,none,0.9667319213959683
+malignant neoplasm skin of upper limb including shoulder,none,0.9999934741804336
+malignant neoplasm soft palate,none,0.9986693939219937
+malignant neoplasm spermatic cord,none,0.9999989423479343
+malignant neoplasm sphenoidal sinus,none,0.9999971694767835
+malignant neoplasm sublingual gland,none,0.9999925053775811
+malignant neoplasm tonsil unspecified,none,0.9994122879984629
+malignant neoplasm upper gum,none,0.9999975119065256
+malignant neoplasm upper lobe bronchus or lung,lung cancer,0.9997948717711591
+malignant neoplasm upper respiratory tract part unspecified,none,0.999984757227152
+malignant neoplasm upper third of oesophagus,esophageal cancer,0.8175623341375892
+malignant neoplasm urachus,none,0.9999979591058484
+malignant neoplasm uvula,none,0.9998663297330275
+malignent histiocytosis - from 2008 classification,none,0.9293088884318627
+malnutrition-related diabetes mellitus with ketoacidosis,none,0.9999988679390284
+mandibulofacial dysostosis,none,0.9999984807142569
+mania with psychotic symptoms,none,0.9999992103693378
+mantle cell lymphoma,none,0.9999781563537523
+mast cell leukaemia,none,0.9999822539911836
+maternal care for intrauterine death,none,0.999999612774776
+measles complicated by pneumonia,none,0.9999881692925447
+meconium plug syndrome,none,0.9999987335551229
+medullary cystic kidney,none,0.999999612774776
+meningitis unspecified,none,0.9999797059689797
+meningococcaemia unspecified,none,0.9999514708518636
+meningococcal infection unspecified,none,0.9999202862893253
+menopausal and female climacteric states,none,0.9999932653888208
+mental and behavioural disorders due to use of alcohol amnesic syndrome,none,0.999998033514701
+mental and behavioural disorders due to use of alcohol unspecified mental and behavioural disorder,none,0.9999946662098577
+mental and behavioural disorders due to use of cannabinoids dependence syndrome,none,0.9999964390767978
+mental and behavioural disorders due to use of opioids dependence syndrome,none,0.9999981527181072
+mental and behavioural disorders due to use of opioids harmful use,none,0.9999940550149023
+mental and behavioural disorders due to use of tobacco unspecified mental and behavioural disorder,none,0.9999969310701484
+mental and behavioural disorders due to use of volatile solvents dependence syndrome,none,0.9999983167161545
+mesothelioma unspecified,none,0.9999891677052448
+metaphyseal dysplasia,none,0.9999993743675585
+migraine with aura [classical migraine],none,0.9999986295320168
+mild cognitive disorder,none,0.9999998063873693
+miliary tuberculosis unspecified,none,0.9999972734998231
+mitochondrial myopathy not elsewhere classified,none,0.9999985103284967
+mitral valve insufficiency,none,0.9999981079234738
+mixed small and large cell difuse - 2008 version,none,0.9992497432751438
+monoclonal gammopathy of undetermined significance mgus,none,0.9999971694767835
+mononeuritis multiplex,none,0.999997779927489
+monoplegia of lower limb,none,0.9999993743675443
+motorcycle rider injured in collision with car pick-up truck or van passenger injured in traffic accident,none,0.9999969014558986
+motorcycle rider injured in collision with heavy transport vehicle or bus passenger injured in nontraffic accident,none,0.9999981079235164
+motorcycle rider injured in collision with heavy transport vehicle or bus passenger injured in traffic accident,none,0.9999985103284825
+motorcycle rider injured in collision with railway train or railway vehicle driver injured in nontraffic accident,none,0.9999978399024083
+motorcycle rider injured in collision with two- or three-wheeled motor vehicle driver injured in nontraffic accident,none,0.9999966182548317
+motorcycle rider injured in collision with two- or three-wheeled motor vehicle driver injured in traffic accident,none,0.9999976910847802
+motorcycle rider injured in noncollision transport accident driver injured in traffic accident,none,0.9999987783497418
+mucinosis of skin,none,0.9999998063873693
+mucocutaneous lymph node syndrome [kawasaki],none,0.9999970502734944
+mucormycosis unspecified,none,0.9999998063873693
+multifocal and multisystemic disseminated langerhans-cell histiocytosis [letterer-siwe disease],none,0.9999896004671488
+multifocal and unisystemic langerhans-cell histiocytosis,none,0.9999929677547778
+multiple congenital malformations not elsewhere classified,none,0.9999957982662006
+multiple myeloma,none,1.0
+muscular dystrophy,none,0.9999988975533081
+mycetoma unspecified,none,0.9999903149357199
+mycobacterial infection unspecified,none,0.9999989127336675
+myelodysplastic syndrome with isolated del5q chromosomal abnormality,none,0.9999962606451188
+nasal polyp unspecified,none,0.9999981079234738
+neonatal aspiration of meconium,none,0.999999612774776
+neonatal aspiration syndrome unspecified,none,0.9999988975533081
+neonatal candidiasis,none,0.9999974374977262
+neonatal cerebral leukomalacia,none,0.9999970798876493
+neonatal conjunctivitis and dacryocystitis,none,0.9999954558370879
+neoplasm of uncertain or unknown behaviour adrenal gland,none,0.99999807830926
+neoplasm of uncertain or unknown behaviour aortic body and other paraganglia,none,0.9998338852566617
+neoplasm of uncertain or unknown behaviour appendix,none,0.9999952174309467
+neoplasm of uncertain or unknown behaviour cerebral meninges,none,0.9999947406185788
+neoplasm of uncertain or unknown behaviour connective and other soft tissue,none,0.999990017302882
+neoplasm of uncertain or unknown behaviour cranial nerves,none,0.9999883932635064
+neoplasm of uncertain or unknown behaviour digestive organ unspecified,none,0.9999917309332294
+neoplasm of uncertain or unknown behaviour endocrine gland unspecified,none,0.9999963350538166
+neoplasm of uncertain or unknown behaviour female genital organ unspecified,none,0.9999904644986115
+neoplasm of uncertain or unknown behaviour larynx,larynx cancer,0.9997043701081609
+neoplasm of uncertain or unknown behaviour other male genital organs,none,0.9999789763274625
+neoplasm of uncertain or unknown behaviour other respiratory organs,none,0.999973016287412
+neoplasm of uncertain or unknown behaviour ovary,none,0.9999813899674261
+neoplasm of uncertain or unknown behaviour parathyroid gland,none,0.9999940701950177
+neoplasm of uncertain or unknown behaviour pituitary gland,none,0.9999918053415474
+neoplasm of uncertain or unknown behaviour pleura,none,0.999987752458392
+neoplasm of uncertain or unknown behaviour prostate,prostate cancer,0.9990719811869834
+neoplasm of uncertain or unknown behaviour thymus,none,0.9999916413445681
+neoplasm of uncertain or unknown behaviour thyroid gland,none,0.9999866796386938
+neoplasm of uncertain or unknown behaviour uterus,none,0.9999829395873376
+neurogenic bowel not elsewhere classified,none,0.9999835059821736
+neuromuscular scoliosis,none,0.9999976607241555
+neuromyelitis optica [devic],none,0.9999838036128745
+neuronal ceroid lipofuscinosis,none,0.9999946510298469
+neurosyphilis unspecified,none,0.9999983463303894
+nocardiosis unspecified,none,0.9999980335146867
+nodular lymphocyte predominant hodgkin lymphoma,none,0.999980793960556
+nodular sclerosis classical hodgkin lymphoma,none,0.999998703940905
+noninfective neonatal diarrhoea,none,0.9999987039408907
+noninflammatory disorder of vagina unspecified,none,0.99999795910582
+nonrheumatic mitral valve stenosis,none,0.9999973927030537
+nonrheumatic tricuspid valve stenosis,none,0.9999687250815054
+nonspecific urethritis,none,0.999999612774776
+nontoxic goitre unspecified,none,0.9999926245804137
+nquest adjourned,none,0.999927065195889
+nutritional anaemia unspecified,none,0.9999985399427801
+nutritional deficiency unspecified,none,0.9999998063873693
+obstruction of bile duct,none,0.9999977503132139
+occipital encephalocele,none,0.9999694251004155
+occupant [any] of heavy transport vehicle injured in other specified transport accidents,none,0.9999797211486214
+occupant of heavy transport vehicle injured in collision with car pick-up truck or van driver injured in traffic accident,none,0.9999973334746837
+occupant of heavy transport vehicle injured in noncollision transport accident person on outside of vehicle injured in nontraffic accident,none,0.999992848552018
+occupant of pick-up truck or van injured in collision with fixed or stationary object passenger injured in traffic accident,none,0.9999946069817487
+occupant of pick-up truck or van injured in collision with fixed or stationary object unspecified occupant of pick-up truck or van injured in traffic accident,none,0.9999899436408162
+occupant of pick-up truck or van injured in noncollision transport accident driver injured in traffic accident,none,0.9999978846969871
+occupant of pick-up truck or van injured in noncollision transport accident person on outside of vehicle injured in traffic accident,none,0.9999912989168078
+occupant of pick-up truck or van injured in noncollision transport accident unspecified occupant of pick-up truck or van injured in nontraffic accident,none,0.9995615306357865
+occupant of pick-up truck or van injured in noncollision transport accident unspecified occupant of pick-up truck or van injured in traffic accident,none,0.9995501369261225
+occupant of railway train or railway vehicle injured by fall from railway train or railway vehicle,none,0.9999956350149883
+occupant of streetcar injured by fall from streetcar,none,0.99999484464138
+occupant of streetcar injured in other specified transport accidents,none,0.9999991063461252
+occupant of three-wheeled motor vehicle injured in collision with car pick-up truck or van driver injured in traffic accident,none,0.9999937277664825
+occupant of three-wheeled motor vehicle injured in collision with car pick-up truck or van person injured while boarding or alighting,none,0.9999722418576279
+occupant of three-wheeled motor vehicle injured in collision with fixed or stationary object driver injured in traffic accident,none,0.9999944429842247
+occupant of three-wheeled motor vehicle injured in collision with heavy transport vehicle or bus person on outside of vehicle injured in traffic accident,none,0.9999966926635845
+occupant of three-wheeled motor vehicle injured in noncollision transport accident passenger injured in nontraffic accident,none,0.999998316716126
+oedema of larynx,none,0.9901176149738184
+oesophageal obstruction,none,0.9999822091987828
+oesophageal web,none,0.9999969158898617
+orchitis epididymitis and epididymo-orchitis without abscess,none,0.9999837147715639
+osteolysis,none,0.9999996871837232
+osteomyelitis unspecified,none,0.9999974671119066
+osteomyelofibrosis,none,0.9999215822412587
+osteonecrosis unspecified,none,0.9999879756825315
+other acute osteomyelitis,none,0.9999983463303894
+other acute rheumatic heart disease,none,0.9975229850752628
+other alzheimer disease,none,0.9999963198735105
+other amnesia,none,1.0
+other amyloidosis,none,0.9999993743675585
+other and unspecified adrenocortical insufficiency,none,0.9999968263007644
+other and unspecified agents primarily acting on muscles,none,0.9999957238575854
+other and unspecified cirrhosis of liver,none,0.999980972389532
+other and unspecified convulsions,none,0.9999998063873693
+other and unspecified gastroenteritis and colitis of infectious origin,none,0.9999998063873693
+other and unspecified hydronephrosis,none,0.9999888845067518
+other and unspecified intestinal obstruction,none,0.9999985399427375
+other and unspecified water transport accidents unspecified watercraft,none,0.9999989423479343
+other antidysrhythmic drugs not elsewhere classified,none,0.999940504708458
+other atypical virus infections of central nervous system,none,0.9999939358117429
+other autoimmune haemolytic anaemias,none,0.999996007058328
+other benign neoplasm cervix uteri,none,0.9999987039408765
+other bursitis not elsewhere classified,none,0.9999992551639781
+other cardiovascular disorders originating in the perinatal period,none,0.999993026983088
+other cervical disc disorders,none,0.9999987783497845
+other childhood disintegrative disorder,none,0.9999965582800566
+other complications associated with artificial fertilization,none,0.9999993743675443
+other congenital ichthyosis,none,0.9999998063873693
+other congenital malformation syndromes with other skeletal changes,none,0.9999976014956418
+other congenital malformations of bile ducts,none,0.9999870220651564
+other congenital malformations of bony thorax,none,0.999994904616237
+other congenital malformations of diaphragm,none,0.9999977055186127
+other congenital malformations of great veins,none,0.9999986591462894
+other congenital malformations of hair,none,0.9999973479086816
+other congenital malformations of lung,none,0.9999964390768689
+other congenital malformations of oesophagus,none,0.9999730011084262
+other congenital malformations of ribs,none,0.9999981823323232
+other congenital malformations of upper limbs including shoulder girdle,none,0.9999955750403433
+other deletions of part of a chromosome,none,0.9999991359604119
+other depressive episodes,none,0.9999995679801056
+other dermatomyositis,none,0.9999965582800566
+other diseases of salivary glands,none,1.0
+other disorders of globe,none,0.9999991359603977
+other disorders of intestinal carbohydrate absorption,none,0.9999955302458821
+other disorders of lung,pulmonary disease,0.6222956320983608
+other emphysema,pulmonary disease,0.9999988231444054
+other encephalitis myelitis and encephalomyelitis,none,0.9999991063461252
+other forms of acute ischaemic heart disease,ischaemic heart disease,0.9999986295320168
+other forms of acute pericarditis,none,0.952568743363365
+other forms of chronic ischaemic heart disease,ischaemic heart disease,0.9999989423479485
+other forms of leptospirosis,none,0.9999967670724138
+other forms of scoliosis,none,0.9999996871837232
+other fusion of spine,none,0.9999993743675585
+other gonococcal infections,none,0.9999984207392991
+other granulomatous disorders of skin and subcutaneous tissue,none,0.9999964094626477
+other hereditary and idiopathic neuropathies,none,0.9999970798876919
+other hereditary ataxias,none,0.9999991807550489
+other histiocytosis syndromes,none,0.9999982719215704
+other hydrocephalus,none,1.0
+other hyperparathyroidism,none,0.9999986591462894
+other hypoglycaemia,none,0.9999922669723279
+other immediate postpartum haemorrhage,none,0.9999944574182233
+other infective tenosynovitis,none,0.9999986591462894
+other interstitial pulmonary diseases with fibrosis,pulmonary disease,0.9923764761087722
+other intestinal escherichia coli infections,none,0.9999940998091269
+other intestinal malabsorption,none,0.999984235626129
+other iron deficiency anaemias,none,0.9999990167568458
+other juvenile arthritis,none,0.9999993295729128
+other lipid storage disorders,none,0.9999996871837232
+other mature t/nk-cell lymphomas,none,0.9999978399023941
+other megaloblastic anaemias not elsewhere classified,none,0.9999943533954341
+other meningococcal infections,none,0.9999977503132139
+other mitral valve diseases,none,0.9999676074896636
+other mycobacterial infections,none,0.999999493571153
+other myositis,none,0.9999978247221788
+other neuromuscular dysfunction of bladder,none,0.999999493571153
+other non-follicular lymphoma,none,0.9999993295729128
+other nonrheumatic tricuspid valve disorders,none,0.9999965734603522
+other obesity,none,1.0
+other orthopoxvirus infections,none,0.9999988975533081
+other osteoporosis,none,1.0
+other pervasive developmental disorders,none,0.9999996871837232
+other placental disorders,none,0.9999992999586204
+other pneumonia organism unspecified,none,0.9999830436087975
+other pulmonary aspergillosis,none,0.9999976311098272
+other rupture of muscle nontraumatic,none,0.999995962264018
+other secondary parkinsonism,none,0.9999984655338898
+other secondary scoliosis,none,0.9999985399427375
+other secondary syphilis,none,0.9999996871837232
+other seropositive rheumatoid arthritis,none,0.9999947254384959
+other severe and complicated plasmodium falciparum malaria,none,0.9999970798877061
+other shock,none,1.0
+other somatoform disorders,none,0.999999493571153
+other specified abdominal hernia with gangrene,none,0.9999996871837232
+other specified abdominal hernia with obstruction without gangrene,none,0.9999987935301421
+other specified coagulation defects,none,0.9999985399427375
+other specified conditions associated with female genital organs and menstrual cycle,none,0.9999961710561512
+other specified conduction disorders,none,0.9999992551639781
+other specified congenital infectious and parasitic diseases,none,0.9999937422003147
+other specified congenital malformations of face and neck,none,0.9999874988736308
+other specified congenital malformations of intestine,none,0.9999978695166718
+other specified congenital malformations of kidney,none,0.9999984207393133
+other specified congenital malformations of limbs,none,0.9999981079235306
+other specified congenital malformations of spinal cord,none,0.9999978695166292
+other specified degenerative diseases of basal ganglia,none,0.999993638177884
+other specified diabetes mellitus with peripheral circulatory complications,none,0.9999963198734678
+other specified diabetes mellitus with renal complications,none,0.9999987487354941
+other specified diabetes mellitus with unspecified complications,none,0.9999970798876351
+other specified diseases of liver,none,0.9999987783497845
+other specified diseases of oesophagus,none,0.9999840868106818
+other specified diseases of pancreas,none,0.9999944574181523
+other specified diseases of pericardium,none,0.999999448776502
+other specified diseases of pulmonary vessels,none,0.9999993743675585
+other specified diseases of spinal cord,none,0.9999950830474323
+other specified diseases of upper respiratory tract,none,0.9999964838712713
+other specified disorders of central nervous system,none,0.9999984655339182
+other specified disorders of kidney and ureter,none,0.9999986743266168
+other specified disorders of muscle,none,0.999999493571153
+other specified disorders of peritoneum,none,0.999999493571153
+other specified disorders of prostate,none,0.99999822712696
+other specified disorders of thyroid,none,0.9999987783497845
+other specified disorders of veins,none,0.9999993743675585
+other specified disorders of white blood cells,none,0.9999994191622202
+other specified disturbances of cerebral status of newborn,none,0.9999990615514773
+other specified epidermal thickening,none,0.9999988975533081
+other specified heart block,none,0.999999448776502
+other specified inflammation of vagina and vulva,none,0.9999954406567383
+other specified inflammatory liver diseases,none,0.9999987039408765
+other specified inflammatory spondylopathies,none,0.9999869476573364
+other specified leukaemias,none,0.9990634486928591
+other specified local infections of skin and subcutaneous tissue,none,0.9999988679390284
+other specified mycoses,none,0.9999993743675585
+other specified neoplasms of uncertain or unknown behaviour of lymphoid haematopoietic and related tissue,none,0.9999314313766857
+other specified noninfective gastroenteritis and colitis,none,0.9999977503132281
+other specified nutritional deficiencies,none,0.9999992999586204
+other specified osteochondrodysplasias,none,0.9999875884618784
+other specified peripheral vascular diseases,none,0.9999970054788393
+other specified pregnancy-related conditions,none,0.999999091165777
+other specified puerperal infections,none,0.999999493571153
+other specified spondylopathies,none,0.9999983463303894
+other specified symptoms and signs involving the digestive system and abdomen,none,0.999995098227805
+other specified types of non-hodgkin lymphoma,none,0.9999972438855631
+other specified viral diseases,none,0.9999987039408907
+other specified zoonotic bacterial diseases not elsewhere classified,none,0.9999974822922586
+other spontaneous pneumothorax,none,0.9999978991308366
+other streptococcal sepsis,none,0.9999992999586204
+other systemic antibiotics,none,0.9999865004630801
+other thrombophilia,none,0.9999998063873693
+other tricuspid valve diseases,none,0.9999993743675585
+other vascular disorders of intestine,none,0.9999975119065114
+other vincent infections,none,1.0
+other viral infections of unspecified site,none,0.9999991359604119
+otorhinolaryngological drugs and preparations,none,0.9999793187511309
+paget disease of other bones,none,0.999999091165777
+pain in limb,none,1.0
+palmar fascial fibromatosis [dupuytren],none,0.9999903452963348
+paraplegia unspecified,none,0.9999998063873693
+parenteral anaesthetics,none,0.999998465533904
+passenger of special construction vehicle injured in nontraffic accident,none,0.9999998063873693
+patau syndrome unspecified,none,0.9999924605832006
+patent ductus arteriosus,none,0.9999905237266457
+pathological fracture not elsewhere classified,none,0.9999988975533223
+pedal cyclist [any] injured in other specified transport accidents,none,0.999975474706764
+pedal cyclist [any] injured in unspecified traffic accident,none,0.9999974374977262
+pedal cyclist injured in collision with car pick-up truck or van passenger injured in traffic accident,none,0.9999970950679669
+pedal cyclist injured in collision with fixed or stationary object driver injured in nontraffic accident,none,0.9999966926636271
+pedal cyclist injured in collision with other pedal cycle driver injured in traffic accident,none,0.9999976166759674
+pedal cyclist injured in collision with pedestrian or animal driver injured in traffic accident,none,0.9999976462902243
+pedal cyclist injured in collision with two- or three-wheeled motor vehicle passenger injured in traffic accident,none,0.9999972142713324
+pedal cyclist injured in noncollision transport accident passenger injured in nontraffic accident,none,0.999999612774776
+pedestrian injured in collision with car pick-up truck or van nontraffic accident,none,0.9999901365054463
+pedestrian injured in collision with car pick-up truck or van unspecified whether traffic or nontraffic accident,none,0.9999916269108374
+pedestrian injured in collision with heavy transport vehicle or bus traffic accident,none,0.9999790659149749
+pedestrian injured in collision with railway train or railway vehicle traffic accident,none,0.9999989127336675
+pedestrian injured in collision with two- or three-wheeled motor vehicle traffic accident,none,0.9999972438855915
+pedestrian injured in traffic accident involving other and unspecified motor vehicles,none,0.9999981975127001
+pemphigus vulgaris,none,0.9999970350932343
+peptic ulcer site unspecified chronic without haemorrhage or perforation,none,0.9999966182548743
+peptic ulcer site unspecified unspecified as acute or chronic without haemorrhage or perforation,none,0.9999978846969871
+peritonitis unspecified,none,1.0
+persistant atrial fibrillation from 2014 onwards,none,0.9999784843433859
+person injured in collision between car and bus traffic,none,0.9999984655338472
+person injured in collision between car and heavy transport vehicle traffic,none,0.9999991063461252
+person injured in collision between other specified motor vehicles traffic,none,0.99999764629021
+person injured in unspecified vehicle accident,none,0.99999901675686
+person injured while boarding or alighting from special industrial vehicle,none,0.9999934445664708
+person on outside of special agricultural vehicle injured in nontraffic accident,none,0.9999983167161829
+personality disorder unspecified,none,0.9999993743675585
+phakomatosis unspecified,none,0.9999866196651401
+pharyngeal pouch,none,1.0
+phlebitis and thrombophlebitis of femoral vein,none,0.999998510328511
+phlebitis and thrombophlebitis of lower extremities unspecified,none,0.9999969014559412
+phlebitis and thrombophlebitis of unspecified site,none,0.99999795910582
+plasmodium falciparum malaria unspecified,none,0.9999968414811634
+pneumonia due to escherichia coli,none,0.9999978846970013
+pneumonia due to other streptococci,none,0.9999945022126507
+polyarteritis nodosa,none,0.9999978695166292
+polyarthrosis unspecified,none,0.9999942486265332
+polymyalgia rheumatica,none,0.9999973182943767
+portal hypertension,none,0.9999988975533081
+portal vein-hepatic artery fistula,none,0.999999493571153
+postprocedural renal failure,none,0.9999991359604119
+pre-eclampsia unspecified,none,0.9999976311098983
+pre-existing hypertensive heart and renal disease complicating pregnancy childbirth and the puerperium,none,0.9999784699101009
+predominantly obsessional thoughts or ruminations,none,0.9999994191622202
+premature separation of placenta unspecified,none,0.9999991807550489
+prepatellar bursitis,none,0.9999956790630465
+primary atelectasis of newborn,none,0.9999993743675585
+primary cutaneous cd30-positive t-cell proliferations,none,0.999992669374759
+psoriasis unspecified,none,0.9999895253131033
+psychostimulants with abuse potential,none,0.9999998063873693
+pulmonary actinomycosis,pulmonary disease,0.7057668864465134
+pulmonary embolism without mention of acute cor pulmonale,pulmonary disease,0.9465853475161895
+pulmonary heart disease unspecified,pulmonary disease,0.9989606704202261
+pulmonary nocardiosis,pulmonary disease,0.9986725185849159
+pulmonary toxoplasmosis,pulmonary disease,0.9975213613939609
+pulmonary valve insufficiency,pulmonary disease,0.5926551635545276
+pure hyperglyceridaemia,none,0.9999849956309699
+purulent endophthalmitis,none,0.9999982719215562
+pustulosis palmaris et plantaris,none,0.9999989423479343
+pyridoxine deficiency,none,0.9999993743675443
+qualitative platelet defects,none,0.9999963646680781
+rabies unspecified,none,0.9999998063873693
+rapidly progressive nephritic syndrome unspecified,none,0.9999573115661262
+re-entry ventricular arrhythmia,none,0.9999501148835193
+rectal abscess,none,0.9999987783497418
+rectal fistula,none,0.9999995679801056
+rectal polyp,none,0.9999751019241452
+recurrent depressive disorder current episode severe without psychotic symptoms,none,0.999998674326631
+refractory anaemia with excess of blasts,none,0.9999966478690305
+renal agenesis unilateral,none,0.9999950534334788
+renal hypoplasia unspecified,none,0.9999908813344917
+renal osteodystrophy,none,0.9999933397973667
+renal tubulo-interstitial disease unspecified,none,0.9999950534334788
+respiratory arrest,none,0.9999987487355083
+respiratory failure of newborn,none,0.999999493571153
+respiratory tuberculosis unspecified without mention of bacteriological or histological confirmation,none,0.9990412367212689
+retropharyngeal and parapharyngeal abscess,none,0.9999948302075746
+rheumatic aortic valve disease unspecified,none,0.9999967966866313
+rheumatoid lung disease,pulmonary disease,0.9840459582195034
+rheumatoid nodule,none,0.9999977055187121
+rheumatoid vasculitis,none,0.9999982567411922
+rhinocerebral mucormycosis,none,0.9999988679390426
+rider or occupant injured in collision with fixed or stationary object,none,0.999996975864644
+rider or occupant injured in other and unspecified transport accidents,none,0.9999985399427375
+rotaviral enteritis,none,0.9999990615514773
+salicylates,none,0.9999992103693378
+salmonella sepsis,none,0.9999996871837232
+sarcoidosis of other and combined sites,none,0.9999639715299679
+schistosomiasis due to schistosoma haematobium [urinary schistosomiasis],none,0.9999821803309544
+secondary and unspecified malignant neoplasm lymph node unspecified,none,0.9999781419201736
+secondary and unspecified malignant neoplasm lymph nodes of head face and neck,none,0.9999977206990108
+secondary malignant neoplasm of bone and bone marrow,none,0.999990955742988
+secondary malignant neoplasm of brain and cerebral meninges,none,0.999997601495656
+secondary malignant neoplasm of other and unspecified digestive organs,none,0.9999666242776628
+secondary malignant neoplasm of other specified sites,none,0.9999988679390142
+secondary thrombocytopenia,none,0.999997869516615
+sepsis due to staphylococcus aureus,none,0.9999980631288848
+sepsis due to streptococcus group a,none,0.9999889740947682
+sepsis due to unspecified staphylococcus,none,0.9999869476570664
+sepsis of newborn due to escherichia coli,none,0.999998346330432
+sepsis unspecified,none,0.9999998063873693
+sequelae of intracerebral haemorrhage,none,0.9999714962969858
+sequelae of other and unspecified cerebrovascular diseases,none,0.999949250888455
+sequelae of other and unspecified transport accidents,none,0.9999695739148461
+sequelae of other specified infectious and parasitic diseases,none,0.9999507556658083
+sequelae of respiratory and unspecified tuberculosis,none,0.9999178872282624
+sequestration of lung,none,0.7296969370087768
+seronegative rheumatoid arthritis,none,0.9999941294234501
+severe combined immunodeficiency [scid] with low t- and b-cell numbers,none,0.9999971102483274
+severe depressive episode without psychotic symptoms,none,0.9999990615514773
+shock unspecified,none,1.0
+sicca syndrome [sjgren],none,0.9999655810929442
+sinus fistula and cyst of branchial cleft,none,0.9999994191622202
+slow fetal growth unspecified,none,0.9999978247221788
+small cell b-cell lymphoma,none,0.9999966326887338
+small for gestational age,none,0.999999493571153
+soft tissue disorder unspecified,none,0.9999998063873693
+solitary plasmacytoma,none,0.99999727349988
+spastic paraplegia,none,0.9999986591462894
+specific isolated phobias,none,0.999999493571153
+spina bifida unspecified,none,0.999999612774776
+spinal muscular atrophy unspecified,none,0.9999988231444054
+spinal stenosis,none,0.9999993743675585
+spontaneous abortion complete or unspecified with other and unspecified complications,none,0.9999967222778139
+spontaneous rupture of unspecified tendon,none,0.9999988231444054
+stage i decubitus ulcer and pressure area from 2014 onwards,none,0.9999813899672272
+stenosis of aorta,none,0.9999982271269742
+stenosis of larynx,none,0.9997678069500223
+streptococcal infection unspecified site,none,0.9999981975127143
+striatonigral degeneration,none,0.999999493571153
+subarachnoid haemorrhage from anterior communicating artery,none,0.9999866796392338
+subarachnoid haemorrhage from middle cerebral artery,none,0.9999893764960447
+subcortical vascular dementia,none,0.9999986591462752
+subcutaneous phaeomycotic abscess and cyst,none,0.9999946214157356
+subsequent myocardial infarction of unspecified site,ischaemic heart disease,0.9978049155013207
+suppurative otitis media unspecified,none,0.9999984655339182
+surgical operation with transplant of whole organ,none,0.9999981079235306
+surgical procedure unspecified,none,0.9999976311098983
+syringomyelia and syringobulbia,none,0.9999994191622202
+systemic inflammatory response syndrome unspecified,none,0.9999988679390426
+systemic involvement of connective tissue unspecified,none,1.0
+systemic lupus erythematosus with organ or system involvement,none,0.999986515642754
+thalassaemia unspecified,none,0.9999987783497845
+thiamine deficiency unspecified,none,0.9999989719621736
+thoracic spina bifida without hydrocephalus,none,0.9999992999586204
+thyrotoxicosis unspecified,none,0.9999858300445319
+toxic liver disease with cholestasis,none,0.9999991807550347
+toxic liver disease with other disorders of liver,none,0.9999978695166292
+toxic shock syndrome,none,0.9999996871837232
+transient cerebral ischaemic attack unspecified,cerebrovascular disease,0.9767279784261144
+trichilemmal cyst,none,1.0
+trigeminal neuralgia,none,0.9999996871837232
+triploidy and polyploidy,none,0.9999994191622202
+tubal pregnancy,none,0.9999938166089671
+tuberculosis complicating pregnancy childbirth and the puerperium,none,0.9999942341925091
+tuberculosis of intestines peritoneum and mesenteric glands,none,0.9999857260225548
+tuberculosis of larynx trachea and bronchus without mention of bacteriological or histological confirmation,none,0.99999210372155
+tuberculosis of other specified organs,none,0.9999985103284967
+tuberous sclerosis,none,0.999997064707474
+typhoid fever,none,0.999999448776502
+ulcer of anus and rectum,none,0.9046366956920612
+ulceration of vulva,none,0.9999998063873693
+ulcerative chronic pancolitis,colorectal cancer,0.6224477269259671
+ultralight microlight or powered-glider accident injuring occupant,none,0.9999978846970156
+umbilical hernia without obstruction or gangrene,none,0.9999856068212692
+unilateral or unspecified femoral hernia with gangrene,none,0.9999991807550489
+unilateral or unspecified femoral hernia with obstruction without gangrene,none,0.9999980335146867
+unilateral or unspecified femoral hernia without obstruction or gangrene,none,0.9999989127336675
+unilateral or unspecified inguinal hernia without obstruction or gangrene,none,0.999999225549702
+unspecified abdominal hernia with gangrene,none,0.9999976014956418
+unspecified brain damage due to birth injury,none,0.9999989423479485
+unspecified car occupant injured in collision with other and unspecified motor vehicles in traffic accident,none,0.9999982423073093
+unspecified cleft palate with unilateral cleft lip,none,0.9999962750790727
+unspecified diabetes mellitus with ketoacidosis,none,0.9999976311098272
+unspecified diabetes mellitus with unspecified complications,none,0.9999968414811066
+unspecified haemorrhoids with other complications until 2013 - then moved to k64,none,0.9999491468691177
+unspecified motorcycle rider injured in collision with other and unspecified motor vehicles in traffic accident,none,0.9999977206990392
+unspecified nephritic syndrome diffuse endocapillary proliferative glomerulonephritis,none,0.9999829547672844
+unspecified nephritic syndrome other,none,0.9999799147570224
+unspecified pre-existing hypertension complicating pregnancy childbirth and the puerperium,none,0.9999950389994289
+unspecified respiratory condition due to chemicals gases fumes and vapours,none,0.9840552418630235
+unspecified viral hepatitis without hepatic coma,none,0.9999082477479377
+unspecified visual impairment binocular,none,0.999997199091084
+urethral abscess,none,0.9997935456362961
+urethral disorder unspecified,none,0.9999029433126232
+urinary calculus unspecified,none,0.9999971542964932
+urinary catheterization,none,0.9999950830474892
+urticaria unspecified,none,0.999999493571153
+vaccine or biological substance unspecified,none,0.9999989423479485
+vaginal delivery following previous caesarean section,none,0.9999946662101561
+varicella meningitis,none,0.9999995679801056
+varicose veins of other specified sites,none,0.9999991807550489
+vascular disorder of intestine unspecified,none,0.9999946958244534
+vasculitis limited to skin unspecified,none,0.9999975119065825
+ventral hernia with gangrene from 2014 onwards,none,0.9999955598600345
+ventral hernia with obstruction without gangrene from 2014 onwards,none,0.9999793635451786
+ventral hernia without obstruction or gangrene from 2014 onwards,none,0.9999807787805852
+ventral hernia without obstruction or gangrene until 2013,none,0.9999987935301421
+ventricular premature depolarization,none,0.9999883036754568
+viral carditis,none,0.9999993295729128
+vitamin b12 deficiency anaemia due to intrinsic factor deficiency,none,0.9999985847373477
+vitamin d deficiency unspecified,none,0.999997631109884
+war operations involving other explosions and fragments,none,0.999999493571153
+war operations occurring after cessation of hostilities,none,0.9999962006703652
+water-transport-related drowning and submersion without accident to watercraft canoe or kayak,none,0.9999978846970013
+water-transport-related drowning and submersion without accident to watercraft sailboat,none,0.9999980783092742
+waterhouse-friderichsen syndrome,none,1.0
+whooping cough due to bordetella pertussis,none,0.9999977503131713
+whooping cough unspecified,none,0.999999493571153
+wrist or foot drop acquired,none,1.0
+yellow nail syndrome,none,0.9999998063873693
+zoster encephalitis,none,0.9999907917456364
