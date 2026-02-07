@@ -25,13 +25,14 @@ cod_categories = [
 
 
 # %% Execute LLMClassifier and save
-filename_out = "output_gpt_4o_base"
+filename_out = "output_gpt_4o_mini_ft"
 
 classifier = LLMClassifier(
     options=cod_categories,
     input_field="cause_of_death",
     category_field="category",
-    model="gpt-4o-2024-08-06",
+    model="ft:gpt-4o-mini-2024-07-18:personal::D4ZkhNZ6",
+    seed=1,
     extra_kwargs={
         # "logit_bias": {12851: -2.5}
     }
@@ -39,7 +40,7 @@ classifier = LLMClassifier(
 
 final_df = classifier.run(
     cod_list,
-    chunk_size=100,
+    chunk_size=15,
     checkpoint_path=f"./Data/{filename_out}.pkl",
     extra_info="If a cause of death cannot be linked to smoking in any way, for example if it is an infectious disease,"
     "a genetic disorder, or has an external cause provided within the text (e.g. asbestos),"

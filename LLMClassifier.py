@@ -19,7 +19,8 @@ class LLMClassifier:
         options: List[str],
         input_field: str = "text_input",
         category_field: str = "category",
-        model: str = "gpt-4o-2024-08-06",
+        model: str = "ft:gpt-4o-mini-2024-07-18:personal::D4ZkhNZ6",
+        seed: int = 1, 
         extra_kwargs: Optional[Dict[str, Any]] = None
     ):
         """
@@ -30,6 +31,7 @@ class LLMClassifier:
             input_field: The key name for the input text in the JSON schema.
             category_field: The key name for the predicted label in the JSON schema.
             model: OpenAI model string (must support Structured Outputs).
+            seed:Random seed for reproducible model outputs.
             extra_kwargs: Additional parameters for the ChatCompletion call (e.g., max_tokens).
         """
         self.client = OpenAI()
@@ -37,9 +39,10 @@ class LLMClassifier:
         self.input_field = input_field
         self.category_field = category_field
         self.model = model
+        self.seed = seed
 
         # Merge default settings safely with your extra_kwargs
-        self.kwargs = {"temperature": 0, "logprobs": True}
+        self.kwargs = {"temperature": 0, "logprobs": True, "seed": self.seed}
         if extra_kwargs:
             self.kwargs.update(extra_kwargs)
 
@@ -94,7 +97,7 @@ class LLMClassifier:
 
     def run(self,
             data_list: List[str],
-            chunk_size: int = 12,
+            chunk_size: int = 15,
             checkpoint_path: Optional[str] = None,
             extra_info: Optional[str] = None) -> pd.DataFrame:
         """
