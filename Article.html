@@ -7518,8 +7518,8 @@ a.anchor-link {
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <h1 id="Classifying-Actuarial-Data-with-LLMs">Classifying Actuarial Data with LLMs<a class="anchor-link" href="#Classifying-Actuarial-Data-with-LLMs">¶</a></h1><p>By Paul Beard and Kay Khine Myo</p>
 <h2 id="Introduction">Introduction<a class="anchor-link" href="#Introduction">¶</a></h2><p>Large Language Models (LLMs) are increasingly playing a role in actuarial work. One recent study by the SOA<a href="https://www.soa.org/4ac5cf/globalassets/assets/files/resources/research-report/2025/2025-11-ait-172-ai-quarter-survey-report.pdf">^1</a> found that actuaries are currently most likely to use LLMs for brainstorming, writing and interpreting documents, and code generation. In this article, we consider another potential use case, to save on the time-consuming task of data cleansing.</p>
-<p>Normally data cleansing can be carried out by code, manipulation or in some cases manually. Occassionally our dataset is just too messy, nuanced and large for any of these options to work well. We explore a case study with one such dataset. By building a pipeline within Python we cleanse the data via an LLM. We also explore some techniques beyond prompting with allow us to get the most out of our LLM.</p>
-<h2 id="Initial-Case-Study">Initial Case Study<a class="anchor-link" href="#Initial-Case-Study">¶</a></h2><p>For this case study we have taken the ICD-10 causes of death as our dataset. There are thousands of causes of death in here, but we want to classify them into a small group of broader categories. The broader categories we have pulled from an online paper<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3229033/">^2</a> related to the cause-specific mortality impact of smoking. To make our ICD-10 causes of death compatible with the hazard ratios found in this paper, we wish to classify each cause into one of the following groups:</p>
+<p>Normally, data cleansing can be carried out through code, rule-based transformations, or manual review. Occasionally our dataset is just too messy, nuanced and large for any of these options to work well. We explore a case study with one such dataset. By building a pipeline within Python we cleanse the data via an LLM. We also explore some techniques beyond prompting that allow us to get the most out of our LLM.</p>
+<h2 id="Initial-Case-Study">Initial Case Study<a class="anchor-link" href="#Initial-Case-Study">¶</a></h2><p>For this case study we have taken the ICD-10 causes of death as our dataset. There are thousands of causes of death in here, with examples such as "Primary pulmonary hypertension" or "Other specified diseases of biliary tract". We want to classify them into a small group of broader categories. The broader categories we have pulled from an online paper<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3229033/">^2</a> related to the cause-specific mortality impact of smoking. To make our ICD-10 causes of death compatible with the hazard ratios found in this paper, we wish to classify each cause into one of the following groups:</p>
 <ul>
 <li>ischaemic heart disease</li>
 <li>cerebrovascular disease</li>
@@ -7537,9 +7537,9 @@ a.anchor-link {
 <li>prostate cancer</li>
 <li>none</li>
 </ul>
-<p>To get a measure of the results we also attempted this classification piece ourselves. We should caveate that these estimates are our own best guesses, and may be incorrect in places. After all, to err is human!</p>
+<p>To get a measure of the results we also attempted this classification piece ourselves. We should caveat that these estimates are our own best guesses, and may be incorrect in places. After all, to err is human!</p>
 <p>We got some initial results using LLMs available via OpenAI. We used gpt-4o, a very capable model, as our main LLM in this analysis. We also show the results with gpt-4o-mini, for a cheaper and faster alternative. The performance of gpt-4o was quite strong, with an accuracy of 97.7%.</p>
-<p>The ultimate goal for our dataset was to align it with hazard ratios related to smoking. Anything outside this permit was therefore classed as "none". This included infectious, genetic, and accidental causes of death. In every case of mismatch between human and LLM, the category "none" was chosen by either our human or LLM - it was by far the most common category. The LLM never struggled to disambiguate between, say, lung cancer and pancreatic cancer. The mismatches occurred when it wasn't clear whether to discard into the "none" pile or not. This is why the performance has been measured in terms of true/false positives/negatives, which are then converted into scores for precision (how many selected cases were correct), recall (how many relevant cases were identified), and F1 (a balance between precision and recall).</p>
+<p>The ultimate goal for our dataset was to align it with hazard ratios related to smoking. Anything outside this permit was therefore classed as "none". This included infectious, genetic, and accidental causes of death. In every case of mismatch between human and LLM, the category "none" was chosen by either our human or LLM - it was by far the most common category. The LLM never struggled to disambiguate between, say, lung cancer and pancreatic cancer. The mismatches occurred when it wasn't clear whether to discard into the "none" pile or not. This is why the performance has been measured in terms of true/false positives/negatives, which are then summarised using standard classification metrics: precision (how many selected cases were correct), recall (how many relevant cases were identified), and F1 (a balance between precision and recall).</p>
 </div>
 </div>
 </div>
@@ -7551,17 +7551,17 @@ a.anchor-link {
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <style type="text/css">
-#T_29b99 thead th {
+#T_fcfbd thead th {
   background: #d3d3d3;
   color: #333333;
   font-weight: 400;
   text-align: center;
   padding: 8px;
 }
-#T_29b99 thead tr:first-child th[colspan]:not([colspan='1']) {
+#T_fcfbd thead tr:first-child th[colspan]:not([colspan='1']) {
   position: relative;
 }
-#T_29b99 thead tr:first-child th[colspan]:not([colspan='1'])::after {
+#T_fcfbd thead tr:first-child th[colspan]:not([colspan='1'])::after {
   content: '';
   position: absolute;
   left: 5%;
@@ -7569,107 +7569,98 @@ a.anchor-link {
   bottom: 1px;
   border-bottom: 1px solid #b0b0b0;
 }
-#T_29b99 tbody td {
+#T_fcfbd tbody td {
   text-align: center;
   padding: 8px;
   border-bottom: 1px solid #ededed;
 }
-#T_29b99 thead th:first-child {
+#T_fcfbd thead th:first-child {
   text-align: left;
   padding-left: 12px;
 }
-#T_29b99 tbody td:first-child {
+#T_fcfbd tbody td:first-child {
   text-align: left;
   padding-left: 12px;
 }
-#T_29b99_row0_col5 {
+#T_fcfbd_row0_col5 {
   width: 10em;
   background: linear-gradient(90deg, forestgreen 89.3%, transparent 89.3%) no-repeat center;
   background-size: 100% 80.0%;
   color: white;
 }
-#T_29b99_row0_col6 {
+#T_fcfbd_row0_col6 {
   width: 10em;
   background: linear-gradient(90deg, forestgreen 74.6%, transparent 74.6%) no-repeat center;
   background-size: 100% 80.0%;
   color: white;
 }
-#T_29b99_row0_col7 {
+#T_fcfbd_row0_col7 {
   width: 10em;
   background: linear-gradient(90deg, forestgreen 81.3%, transparent 81.3%) no-repeat center;
   background-size: 100% 80.0%;
   color: white;
 }
-#T_29b99_row1_col5 {
+#T_fcfbd_row1_col5 {
   width: 10em;
   background: linear-gradient(90deg, forestgreen 81.8%, transparent 81.8%) no-repeat center;
   background-size: 100% 80.0%;
   color: white;
 }
-#T_29b99_row1_col6 {
+#T_fcfbd_row1_col6 {
   width: 10em;
   background: linear-gradient(90deg, forestgreen 53.7%, transparent 53.7%) no-repeat center;
   background-size: 100% 80.0%;
   color: white;
 }
-#T_29b99_row1_col7 {
+#T_fcfbd_row1_col7 {
   width: 10em;
   background: linear-gradient(90deg, forestgreen 64.9%, transparent 64.9%) no-repeat center;
   background-size: 100% 80.0%;
   color: white;
 }
 </style>
-<table id="T_29b99" style="margin-left:auto;margin-right:auto;">
+<table id="T_fcfbd" style="margin-left:auto;margin-right:auto;">
 <thead>
 <tr>
-<th class="col_heading level0 col0" id="T_29b99_level0_col0"></th>
-<th class="col_heading level0 col1" colspan="4" id="T_29b99_level0_col1">Count</th>
-<th class="col_heading level0 col5" colspan="3" id="T_29b99_level0_col5">Scores</th>
+<th class="col_heading level0 col0" id="T_fcfbd_level0_col0"></th>
+<th class="col_heading level0 col1" colspan="4" id="T_fcfbd_level0_col1">Count</th>
+<th class="col_heading level0 col5" colspan="3" id="T_fcfbd_level0_col5">Scores</th>
 </tr>
 <tr>
-<th class="col_heading level1 col0" id="T_29b99_level1_col0">Model</th>
-<th class="col_heading level1 col1" id="T_29b99_level1_col1">True Negative</th>
-<th class="col_heading level1 col2" id="T_29b99_level1_col2">False Negative</th>
-<th class="col_heading level1 col3" id="T_29b99_level1_col3">True Positive</th>
-<th class="col_heading level1 col4" id="T_29b99_level1_col4">False Positive</th>
-<th class="col_heading level1 col5" id="T_29b99_level1_col5">Precision</th>
-<th class="col_heading level1 col6" id="T_29b99_level1_col6">Recall</th>
-<th class="col_heading level1 col7" id="T_29b99_level1_col7">F1</th>
+<th class="col_heading level1 col0" id="T_fcfbd_level1_col0">Model</th>
+<th class="col_heading level1 col1" id="T_fcfbd_level1_col1">True Negative</th>
+<th class="col_heading level1 col2" id="T_fcfbd_level1_col2">False Negative</th>
+<th class="col_heading level1 col3" id="T_fcfbd_level1_col3">True Positive</th>
+<th class="col_heading level1 col4" id="T_fcfbd_level1_col4">False Positive</th>
+<th class="col_heading level1 col5" id="T_fcfbd_level1_col5">Precision</th>
+<th class="col_heading level1 col6" id="T_fcfbd_level1_col6">Recall</th>
+<th class="col_heading level1 col7" id="T_fcfbd_level1_col7">F1</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="data row0 col0" id="T_29b99_row0_col0">gpt-4o</td>
-<td class="data row0 col1" id="T_29b99_row0_col1">927</td>
-<td class="data row0 col2" id="T_29b99_row0_col2">17</td>
-<td class="data row0 col3" id="T_29b99_row0_col3">50</td>
-<td class="data row0 col4" id="T_29b99_row0_col4">6</td>
-<td class="data row0 col5" id="T_29b99_row0_col5">89%</td>
-<td class="data row0 col6" id="T_29b99_row0_col6">75%</td>
-<td class="data row0 col7" id="T_29b99_row0_col7">81%</td>
+<td class="data row0 col0" id="T_fcfbd_row0_col0">gpt-4o</td>
+<td class="data row0 col1" id="T_fcfbd_row0_col1">927</td>
+<td class="data row0 col2" id="T_fcfbd_row0_col2">17</td>
+<td class="data row0 col3" id="T_fcfbd_row0_col3">50</td>
+<td class="data row0 col4" id="T_fcfbd_row0_col4">6</td>
+<td class="data row0 col5" id="T_fcfbd_row0_col5">89%</td>
+<td class="data row0 col6" id="T_fcfbd_row0_col6">75%</td>
+<td class="data row0 col7" id="T_fcfbd_row0_col7">81%</td>
 </tr>
 <tr>
-<td class="data row1 col0" id="T_29b99_row1_col0">gpt-4o-mini</td>
-<td class="data row1 col1" id="T_29b99_row1_col1">925</td>
-<td class="data row1 col2" id="T_29b99_row1_col2">31</td>
-<td class="data row1 col3" id="T_29b99_row1_col3">36</td>
-<td class="data row1 col4" id="T_29b99_row1_col4">8</td>
-<td class="data row1 col5" id="T_29b99_row1_col5">82%</td>
-<td class="data row1 col6" id="T_29b99_row1_col6">54%</td>
-<td class="data row1 col7" id="T_29b99_row1_col7">65%</td>
+<td class="data row1 col0" id="T_fcfbd_row1_col0">gpt-4o-mini</td>
+<td class="data row1 col1" id="T_fcfbd_row1_col1">925</td>
+<td class="data row1 col2" id="T_fcfbd_row1_col2">31</td>
+<td class="data row1 col3" id="T_fcfbd_row1_col3">36</td>
+<td class="data row1 col4" id="T_fcfbd_row1_col4">8</td>
+<td class="data row1 col5" id="T_fcfbd_row1_col5">82%</td>
+<td class="data row1 col6" id="T_fcfbd_row1_col6">54%</td>
+<td class="data row1 col7" id="T_fcfbd_row1_col7">65%</td>
 </tr>
 </tbody>
 </table>
 </div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=2fa491c9">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 </div>
 </div>
 </div>
@@ -7683,9 +7674,9 @@ a.anchor-link {
 <ul>
 <li>Confucius</li>
 </ul>
-<p>In our case study we also completed the task manually so that we could analyse the results. This is useful for testing, but would defeat the purpose in a production environment. How can we get confidence in the answers given by the LLM, without double checking all of it's work?</p>
+<p>In our case study we also completed the task manually so that we could analyse the results. This is useful for testing, but would defeat the purpose in a production environment. How can we get confidence in the answers given by the LLM, without double checking all of its work?</p>
 <p>LLMs are models that keep predicting the next token in sequence. Each token returned by the model had a non-trivial probability of being chosen. In some cases a token can have a very high probability attached. For example the sequence "Once upon a ..." will almost always be followed with "time". Other cases are more ambiguous. The sequence "My favourite actuary is ..." can have many plausible continuations (and many not-so-plausible ones too).</p>
-<p>With some LLMs it is possible not only to receive a response, but also the probabilty of each token in that response. When calling ChatGPT through Python, we can use the logprobs feature to attain this. Once we have the probability of each token, we can transform this into a probability for each classification performed by the LLM. The plot below shows this for our case study.</p>
+<p>With some LLMs it is possible not only to receive a response, but also the probability of each token in that response. When calling ChatGPT through Python, we can use the logprobs feature to attain this. Once we have the probability of each token, we can transform this into a probability for each classification performed by the LLM. The plot below shows this for our case study.</p>
 </div>
 </div>
 </div>
@@ -7719,17 +7710,17 @@ a.anchor-link {
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <style type="text/css">
-#T_68920 thead th {
+#T_63d19 thead th {
   background: #d3d3d3;
   color: #333333;
   font-weight: 400;
   text-align: center;
   padding: 8px;
 }
-#T_68920 thead tr:first-child th[colspan]:not([colspan='1']) {
+#T_63d19 thead tr:first-child th[colspan]:not([colspan='1']) {
   position: relative;
 }
-#T_68920 thead tr:first-child th[colspan]:not([colspan='1'])::after {
+#T_63d19 thead tr:first-child th[colspan]:not([colspan='1'])::after {
   content: '';
   position: absolute;
   left: 5%;
@@ -7737,58 +7728,58 @@ a.anchor-link {
   bottom: 1px;
   border-bottom: 1px solid #b0b0b0;
 }
-#T_68920 tbody td {
+#T_63d19 tbody td {
   text-align: center;
   padding: 8px;
   border-bottom: 1px solid #ededed;
 }
-#T_68920 thead th:first-child {
+#T_63d19 thead th:first-child {
   text-align: left;
   padding-left: 12px;
 }
-#T_68920 tbody td:first-child {
+#T_63d19 tbody td:first-child {
   text-align: left;
   padding-left: 12px;
 }
-#T_68920_row0_col3 {
+#T_63d19_row0_col3 {
   width: 10em;
   background: linear-gradient(90deg, forestgreen 82.2%, transparent 82.2%) no-repeat center;
   background-size: 100% 80.0%;
   color: white;
 }
-#T_68920_row1_col3 {
+#T_63d19_row1_col3 {
   width: 10em;
   background: linear-gradient(90deg, forestgreen 99.4%, transparent 99.4%) no-repeat center;
   background-size: 100% 80.0%;
   color: white;
 }
 </style>
-<table id="T_68920" style="margin-left:auto;margin-right:auto;">
+<table id="T_63d19" style="margin-left:auto;margin-right:auto;">
 <thead>
 <tr>
-<th class="col_heading level0 col0" id="T_68920_level0_col0"></th>
-<th class="col_heading level0 col1" colspan="2" id="T_68920_level0_col1">Count</th>
-<th class="col_heading level0 col3" id="T_68920_level0_col3">Scores</th>
+<th class="col_heading level0 col0" id="T_63d19_level0_col0"></th>
+<th class="col_heading level0 col1" colspan="2" id="T_63d19_level0_col1">Count</th>
+<th class="col_heading level0 col3" id="T_63d19_level0_col3">Scores</th>
 </tr>
 <tr>
-<th class="col_heading level1 col0" id="T_68920_level1_col0">Confidence</th>
-<th class="col_heading level1 col1" id="T_68920_level1_col1">Attempts</th>
-<th class="col_heading level1 col2" id="T_68920_level1_col2">Matches</th>
-<th class="col_heading level1 col3" id="T_68920_level1_col3">Accuracy</th>
+<th class="col_heading level1 col0" id="T_63d19_level1_col0">Confidence</th>
+<th class="col_heading level1 col1" id="T_63d19_level1_col1">Attempts</th>
+<th class="col_heading level1 col2" id="T_63d19_level1_col2">Matches</th>
+<th class="col_heading level1 col3" id="T_63d19_level1_col3">Accuracy</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="data row0 col0" id="T_68920_row0_col0">(0.0, 0.995]</td>
-<td class="data row0 col1" id="T_68920_row0_col1">101</td>
-<td class="data row0 col2" id="T_68920_row0_col2">83</td>
-<td class="data row0 col3" id="T_68920_row0_col3">82%</td>
+<td class="data row0 col0" id="T_63d19_row0_col0">(0.0, 0.995]</td>
+<td class="data row0 col1" id="T_63d19_row0_col1">101</td>
+<td class="data row0 col2" id="T_63d19_row0_col2">83</td>
+<td class="data row0 col3" id="T_63d19_row0_col3">82%</td>
 </tr>
 <tr>
-<td class="data row1 col0" id="T_68920_row1_col0">(0.995, 1.0]</td>
-<td class="data row1 col1" id="T_68920_row1_col1">899</td>
-<td class="data row1 col2" id="T_68920_row1_col2">894</td>
-<td class="data row1 col3" id="T_68920_row1_col3">99%</td>
+<td class="data row1 col0" id="T_63d19_row1_col0">(0.995, 1.0]</td>
+<td class="data row1 col1" id="T_63d19_row1_col1">899</td>
+<td class="data row1 col2" id="T_63d19_row1_col2">894</td>
+<td class="data row1 col3" id="T_63d19_row1_col3">99%</td>
 </tr>
 </tbody>
 </table>
@@ -7817,7 +7808,7 @@ a.anchor-link {
 <li>gpt-4o, with bias</li>
 </ul>
 <p>As described previously, the most common decision was between "none" and a single other category. We can bias the model to select "none" more or less often than it did under the base conditions.</p>
-<p>OpenAI allow the user to re-weight the probability of any given token(s) being selected, with their logit bias feature. In our case, we can isolate the "none" token and increase or decrease it's likelihood. For those causes of death where confidence was lower, this can be enough to change the classifcation chosen by the LLM.</p>
+<p>OpenAI allow the user to re-weight the probability of any given token(s) being selected, with their logit bias feature. In our case, we can isolate the "none" token and increase or decrease its likelihood. For those causes of death where confidence was lower, this can be enough to change the classification chosen by the LLM.</p>
 <p>The results are shown in the table below. We see that a negative bias makes the model select "none" less often, manifesting in more "positives". This leads to a higher recall, but comes at the penalty of lower precision. Conversely, a positive bias has the exact opposite effect. Both modifications lead to a poorer overall performance, as denoted by the F1 score decreasing.</p>
 </div>
 </div>
@@ -7830,17 +7821,17 @@ a.anchor-link {
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <style type="text/css">
-#T_fad26 thead th {
+#T_a9fee thead th {
   background: #d3d3d3;
   color: #333333;
   font-weight: 400;
   text-align: center;
   padding: 8px;
 }
-#T_fad26 thead tr:first-child th[colspan]:not([colspan='1']) {
+#T_a9fee thead tr:first-child th[colspan]:not([colspan='1']) {
   position: relative;
 }
-#T_fad26 thead tr:first-child th[colspan]:not([colspan='1'])::after {
+#T_a9fee thead tr:first-child th[colspan]:not([colspan='1'])::after {
   content: '';
   position: absolute;
   left: 5%;
@@ -7848,178 +7839,178 @@ a.anchor-link {
   bottom: 1px;
   border-bottom: 1px solid #b0b0b0;
 }
-#T_fad26 tbody td {
+#T_a9fee tbody td {
   text-align: center;
   padding: 8px;
   border-bottom: 1px solid #ededed;
 }
-#T_fad26 thead th:first-child {
+#T_a9fee thead th:first-child {
   text-align: left;
   padding-left: 12px;
 }
-#T_fad26 tbody td:first-child {
+#T_a9fee tbody td:first-child {
   text-align: left;
   padding-left: 12px;
 }
-#T_fad26_row0_col5 {
+#T_a9fee_row0_col5 {
   width: 10em;
   background: linear-gradient(90deg, forestgreen 19.7%, transparent 19.7%) no-repeat center;
   background-size: 100% 80.0%;
   color: white;
 }
-#T_fad26_row0_col6 {
+#T_a9fee_row0_col6 {
   width: 10em;
   background: linear-gradient(90deg, forestgreen 98.5%, transparent 98.5%) no-repeat center;
   background-size: 100% 80.0%;
   color: white;
 }
-#T_fad26_row0_col7 {
+#T_a9fee_row0_col7 {
   width: 10em;
   background: linear-gradient(90deg, forestgreen 32.8%, transparent 32.8%) no-repeat center;
   background-size: 100% 80.0%;
   color: white;
 }
-#T_fad26_row1_col5 {
+#T_a9fee_row1_col5 {
   width: 10em;
   background: linear-gradient(90deg, forestgreen 71.2%, transparent 71.2%) no-repeat center;
   background-size: 100% 80.0%;
   color: white;
 }
-#T_fad26_row1_col6 {
+#T_a9fee_row1_col6 {
   width: 10em;
   background: linear-gradient(90deg, forestgreen 77.6%, transparent 77.6%) no-repeat center;
   background-size: 100% 80.0%;
   color: white;
 }
-#T_fad26_row1_col7 {
+#T_a9fee_row1_col7 {
   width: 10em;
   background: linear-gradient(90deg, forestgreen 74.3%, transparent 74.3%) no-repeat center;
   background-size: 100% 80.0%;
   color: white;
 }
-#T_fad26_row2_col5 {
+#T_a9fee_row2_col5 {
   width: 10em;
   background: linear-gradient(90deg, forestgreen 89.3%, transparent 89.3%) no-repeat center;
   background-size: 100% 80.0%;
   color: white;
 }
-#T_fad26_row2_col6 {
+#T_a9fee_row2_col6 {
   width: 10em;
   background: linear-gradient(90deg, forestgreen 74.6%, transparent 74.6%) no-repeat center;
   background-size: 100% 80.0%;
   color: white;
 }
-#T_fad26_row2_col7 {
+#T_a9fee_row2_col7 {
   width: 10em;
   background: linear-gradient(90deg, forestgreen 81.3%, transparent 81.3%) no-repeat center;
   background-size: 100% 80.0%;
   color: white;
 }
-#T_fad26_row3_col5 {
+#T_a9fee_row3_col5 {
   width: 10em;
   background: linear-gradient(90deg, forestgreen 94.9%, transparent 94.9%) no-repeat center;
   background-size: 100% 80.0%;
   color: white;
 }
-#T_fad26_row3_col6 {
+#T_a9fee_row3_col6 {
   width: 10em;
   background: linear-gradient(90deg, forestgreen 55.2%, transparent 55.2%) no-repeat center;
   background-size: 100% 80.0%;
   color: white;
 }
-#T_fad26_row3_col7 {
+#T_a9fee_row3_col7 {
   width: 10em;
   background: linear-gradient(90deg, forestgreen 69.8%, transparent 69.8%) no-repeat center;
   background-size: 100% 80.0%;
   color: white;
 }
-#T_fad26_row4_col5 {
+#T_a9fee_row4_col5 {
   width: 10em;
   background: linear-gradient(90deg, forestgreen 100.0%, transparent 100.0%) no-repeat center;
   background-size: 100% 80.0%;
   color: white;
 }
-#T_fad26_row4_col6 {
+#T_a9fee_row4_col6 {
   width: 10em;
   background: linear-gradient(90deg, forestgreen 7.5%, transparent 7.5%) no-repeat center;
   background-size: 100% 80.0%;
   color: white;
 }
-#T_fad26_row4_col7 {
+#T_a9fee_row4_col7 {
   width: 10em;
   background: linear-gradient(90deg, forestgreen 13.9%, transparent 13.9%) no-repeat center;
   background-size: 100% 80.0%;
   color: white;
 }
 </style>
-<table id="T_fad26" style="margin-left:auto;margin-right:auto;">
+<table id="T_a9fee" style="margin-left:auto;margin-right:auto;">
 <thead>
 <tr>
-<th class="col_heading level0 col0" id="T_fad26_level0_col0"></th>
-<th class="col_heading level0 col1" colspan="4" id="T_fad26_level0_col1">Count</th>
-<th class="col_heading level0 col5" colspan="3" id="T_fad26_level0_col5">Scores</th>
+<th class="col_heading level0 col0" id="T_a9fee_level0_col0"></th>
+<th class="col_heading level0 col1" colspan="4" id="T_a9fee_level0_col1">Count</th>
+<th class="col_heading level0 col5" colspan="3" id="T_a9fee_level0_col5">Scores</th>
 </tr>
 <tr>
-<th class="col_heading level1 col0" id="T_fad26_level1_col0">Bias</th>
-<th class="col_heading level1 col1" id="T_fad26_level1_col1">True Negative</th>
-<th class="col_heading level1 col2" id="T_fad26_level1_col2">False Negative</th>
-<th class="col_heading level1 col3" id="T_fad26_level1_col3">True Positive</th>
-<th class="col_heading level1 col4" id="T_fad26_level1_col4">False Positive</th>
-<th class="col_heading level1 col5" id="T_fad26_level1_col5">Precision</th>
-<th class="col_heading level1 col6" id="T_fad26_level1_col6">Recall</th>
-<th class="col_heading level1 col7" id="T_fad26_level1_col7">F1</th>
+<th class="col_heading level1 col0" id="T_a9fee_level1_col0">Bias</th>
+<th class="col_heading level1 col1" id="T_a9fee_level1_col1">True Negative</th>
+<th class="col_heading level1 col2" id="T_a9fee_level1_col2">False Negative</th>
+<th class="col_heading level1 col3" id="T_a9fee_level1_col3">True Positive</th>
+<th class="col_heading level1 col4" id="T_a9fee_level1_col4">False Positive</th>
+<th class="col_heading level1 col5" id="T_a9fee_level1_col5">Precision</th>
+<th class="col_heading level1 col6" id="T_a9fee_level1_col6">Recall</th>
+<th class="col_heading level1 col7" id="T_a9fee_level1_col7">F1</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="data row0 col0" id="T_fad26_row0_col0">-5</td>
-<td class="data row0 col1" id="T_fad26_row0_col1">664</td>
-<td class="data row0 col2" id="T_fad26_row0_col2">1</td>
-<td class="data row0 col3" id="T_fad26_row0_col3">66</td>
-<td class="data row0 col4" id="T_fad26_row0_col4">269</td>
-<td class="data row0 col5" id="T_fad26_row0_col5">20%</td>
-<td class="data row0 col6" id="T_fad26_row0_col6">99%</td>
-<td class="data row0 col7" id="T_fad26_row0_col7">33%</td>
+<td class="data row0 col0" id="T_a9fee_row0_col0">-5</td>
+<td class="data row0 col1" id="T_a9fee_row0_col1">664</td>
+<td class="data row0 col2" id="T_a9fee_row0_col2">1</td>
+<td class="data row0 col3" id="T_a9fee_row0_col3">66</td>
+<td class="data row0 col4" id="T_a9fee_row0_col4">269</td>
+<td class="data row0 col5" id="T_a9fee_row0_col5">20%</td>
+<td class="data row0 col6" id="T_a9fee_row0_col6">99%</td>
+<td class="data row0 col7" id="T_a9fee_row0_col7">33%</td>
 </tr>
 <tr>
-<td class="data row1 col0" id="T_fad26_row1_col0">-1</td>
-<td class="data row1 col1" id="T_fad26_row1_col1">912</td>
-<td class="data row1 col2" id="T_fad26_row1_col2">15</td>
-<td class="data row1 col3" id="T_fad26_row1_col3">52</td>
-<td class="data row1 col4" id="T_fad26_row1_col4">21</td>
-<td class="data row1 col5" id="T_fad26_row1_col5">71%</td>
-<td class="data row1 col6" id="T_fad26_row1_col6">78%</td>
-<td class="data row1 col7" id="T_fad26_row1_col7">74%</td>
+<td class="data row1 col0" id="T_a9fee_row1_col0">-1</td>
+<td class="data row1 col1" id="T_a9fee_row1_col1">912</td>
+<td class="data row1 col2" id="T_a9fee_row1_col2">15</td>
+<td class="data row1 col3" id="T_a9fee_row1_col3">52</td>
+<td class="data row1 col4" id="T_a9fee_row1_col4">21</td>
+<td class="data row1 col5" id="T_a9fee_row1_col5">71%</td>
+<td class="data row1 col6" id="T_a9fee_row1_col6">78%</td>
+<td class="data row1 col7" id="T_a9fee_row1_col7">74%</td>
 </tr>
 <tr>
-<td class="data row2 col0" id="T_fad26_row2_col0">0</td>
-<td class="data row2 col1" id="T_fad26_row2_col1">927</td>
-<td class="data row2 col2" id="T_fad26_row2_col2">17</td>
-<td class="data row2 col3" id="T_fad26_row2_col3">50</td>
-<td class="data row2 col4" id="T_fad26_row2_col4">6</td>
-<td class="data row2 col5" id="T_fad26_row2_col5">89%</td>
-<td class="data row2 col6" id="T_fad26_row2_col6">75%</td>
-<td class="data row2 col7" id="T_fad26_row2_col7">81%</td>
+<td class="data row2 col0" id="T_a9fee_row2_col0">0</td>
+<td class="data row2 col1" id="T_a9fee_row2_col1">927</td>
+<td class="data row2 col2" id="T_a9fee_row2_col2">17</td>
+<td class="data row2 col3" id="T_a9fee_row2_col3">50</td>
+<td class="data row2 col4" id="T_a9fee_row2_col4">6</td>
+<td class="data row2 col5" id="T_a9fee_row2_col5">89%</td>
+<td class="data row2 col6" id="T_a9fee_row2_col6">75%</td>
+<td class="data row2 col7" id="T_a9fee_row2_col7">81%</td>
 </tr>
 <tr>
-<td class="data row3 col0" id="T_fad26_row3_col0">1</td>
-<td class="data row3 col1" id="T_fad26_row3_col1">931</td>
-<td class="data row3 col2" id="T_fad26_row3_col2">30</td>
-<td class="data row3 col3" id="T_fad26_row3_col3">37</td>
-<td class="data row3 col4" id="T_fad26_row3_col4">2</td>
-<td class="data row3 col5" id="T_fad26_row3_col5">95%</td>
-<td class="data row3 col6" id="T_fad26_row3_col6">55%</td>
-<td class="data row3 col7" id="T_fad26_row3_col7">70%</td>
+<td class="data row3 col0" id="T_a9fee_row3_col0">1</td>
+<td class="data row3 col1" id="T_a9fee_row3_col1">931</td>
+<td class="data row3 col2" id="T_a9fee_row3_col2">30</td>
+<td class="data row3 col3" id="T_a9fee_row3_col3">37</td>
+<td class="data row3 col4" id="T_a9fee_row3_col4">2</td>
+<td class="data row3 col5" id="T_a9fee_row3_col5">95%</td>
+<td class="data row3 col6" id="T_a9fee_row3_col6">55%</td>
+<td class="data row3 col7" id="T_a9fee_row3_col7">70%</td>
 </tr>
 <tr>
-<td class="data row4 col0" id="T_fad26_row4_col0">5</td>
-<td class="data row4 col1" id="T_fad26_row4_col1">933</td>
-<td class="data row4 col2" id="T_fad26_row4_col2">62</td>
-<td class="data row4 col3" id="T_fad26_row4_col3">5</td>
-<td class="data row4 col4" id="T_fad26_row4_col4">0</td>
-<td class="data row4 col5" id="T_fad26_row4_col5">100%</td>
-<td class="data row4 col6" id="T_fad26_row4_col6">7%</td>
-<td class="data row4 col7" id="T_fad26_row4_col7">14%</td>
+<td class="data row4 col0" id="T_a9fee_row4_col0">5</td>
+<td class="data row4 col1" id="T_a9fee_row4_col1">933</td>
+<td class="data row4 col2" id="T_a9fee_row4_col2">62</td>
+<td class="data row4 col3" id="T_a9fee_row4_col3">5</td>
+<td class="data row4 col4" id="T_a9fee_row4_col4">0</td>
+<td class="data row4 col5" id="T_a9fee_row4_col5">100%</td>
+<td class="data row4 col6" id="T_a9fee_row4_col6">7%</td>
+<td class="data row4 col7" id="T_a9fee_row4_col7">14%</td>
 </tr>
 </tbody>
 </table>
@@ -8034,7 +8025,7 @@ a.anchor-link {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 <p>The logit bias can take any value between -100 and +100. We found that small adjustments led to a sensible nudging. Larger adjustments were problematic to the overall task. When we turned the bias down to -100, which essentially bans the word "none", the model started to inject "None" or "NONE" instead. We were truly outplayed. When we turned the bias up to +100 the model came back with the quote shown above. It was talking complete "none" sense!</p>
-<p>Although the logit bias worked in our case, it is also possible to nudge a model's tendecies via your prompt as well. We already did this to get certain diseases classed as "none", such as genetic. The logit bias doesn't allow for context, which could lead to problems where different options share overlapping tokens. We found this feature fun, but perhaps less useful than the other techiques explored.</p>
+<p>Although the logit bias worked in our case, it is also possible to nudge a model's tendencies via your prompt as well. We already did this to get certain diseases classed as "none", such as genetic. The logit bias doesn't allow for context, which could lead to problems where different options share overlapping tokens. We found this feature fun, but perhaps less useful than the other techniques explored.</p>
 </div>
 </div>
 </div>
@@ -8048,7 +8039,7 @@ a.anchor-link {
 <ul>
 <li>Anonymous</li>
 </ul>
-<p>Another approach we applied was fine-tuning. Instead of nudging the model’s behaviour at run time, fine-tuning teaches the model directly using human-annotated labels. In another words, biasing changes behaviour, while fine-tuning changes understanding.</p>
+<p>Another approach we applied was fine-tuning. Instead of nudging the model’s behaviour at run time, fine-tuning teaches the model directly using human-annotated labels. In other words, biasing changes behaviour, while fine-tuning changes understanding.</p>
 <p>We fine-tuned the smaller gpt-4o-mini model. It is around 16–17 times cheaper and noticeably faster than gpt-4o, while already performing well out of the box. This makes it a compelling option for efficient, real-world production use. Each training example consisted of a cause-of-death description, a short instruction, and a single label (either one smoking-related category or "none"). No explanations. No extra text.</p>
 <p>We used 2,579 records for training and held out 1,000 for testing. From the training set, 20% was reserved for validation. The natural class imbalance was left unchanged, with around 93% of records labelled "none". One important lesson from the fine-tuning process was that formatting consistency matters. Training prompts and inference prompts, including their structure and chunk size, must be consistent. When they were not, the model occasionally returned malformed outputs. Once we standardised on a single prompt template, the results became much more reliable.</p>
 <p>The results are shown in the table below. Fine-tuning improved recall, and pushed precision up to 96%. Despite its smaller size, the fine-tuned model came surprisingly close to the performance of gpt-4o, at a fraction of the cost.</p>
@@ -8063,17 +8054,17 @@ a.anchor-link {
 <div class="jp-OutputArea-child jp-OutputArea-executeResult">
 <div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/html" tabindex="0">
 <style type="text/css">
-#T_6db8f thead th {
+#T_e518b thead th {
   background: #d3d3d3;
   color: #333333;
   font-weight: 400;
   text-align: center;
   padding: 8px;
 }
-#T_6db8f thead tr:first-child th[colspan]:not([colspan='1']) {
+#T_e518b thead tr:first-child th[colspan]:not([colspan='1']) {
   position: relative;
 }
-#T_6db8f thead tr:first-child th[colspan]:not([colspan='1'])::after {
+#T_e518b thead tr:first-child th[colspan]:not([colspan='1'])::after {
   content: '';
   position: absolute;
   left: 5%;
@@ -8081,122 +8072,122 @@ a.anchor-link {
   bottom: 1px;
   border-bottom: 1px solid #b0b0b0;
 }
-#T_6db8f tbody td {
+#T_e518b tbody td {
   text-align: center;
   padding: 8px;
   border-bottom: 1px solid #ededed;
 }
-#T_6db8f thead th:first-child {
+#T_e518b thead th:first-child {
   text-align: left;
   padding-left: 12px;
 }
-#T_6db8f tbody td:first-child {
+#T_e518b tbody td:first-child {
   text-align: left;
   padding-left: 12px;
 }
-#T_6db8f_row0_col5 {
+#T_e518b_row0_col5 {
   width: 10em;
   background: linear-gradient(90deg, forestgreen 89.3%, transparent 89.3%) no-repeat center;
   background-size: 100% 80.0%;
   color: white;
 }
-#T_6db8f_row0_col6 {
+#T_e518b_row0_col6 {
   width: 10em;
   background: linear-gradient(90deg, forestgreen 74.6%, transparent 74.6%) no-repeat center;
   background-size: 100% 80.0%;
   color: white;
 }
-#T_6db8f_row0_col7 {
+#T_e518b_row0_col7 {
   width: 10em;
   background: linear-gradient(90deg, forestgreen 81.3%, transparent 81.3%) no-repeat center;
   background-size: 100% 80.0%;
   color: white;
 }
-#T_6db8f_row1_col5 {
+#T_e518b_row1_col5 {
   width: 10em;
   background: linear-gradient(90deg, forestgreen 81.8%, transparent 81.8%) no-repeat center;
   background-size: 100% 80.0%;
   color: white;
 }
-#T_6db8f_row1_col6 {
+#T_e518b_row1_col6 {
   width: 10em;
   background: linear-gradient(90deg, forestgreen 53.7%, transparent 53.7%) no-repeat center;
   background-size: 100% 80.0%;
   color: white;
 }
-#T_6db8f_row1_col7 {
+#T_e518b_row1_col7 {
   width: 10em;
   background: linear-gradient(90deg, forestgreen 64.9%, transparent 64.9%) no-repeat center;
   background-size: 100% 80.0%;
   color: white;
 }
-#T_6db8f_row2_col5 {
+#T_e518b_row2_col5 {
   width: 10em;
   background: linear-gradient(90deg, forestgreen 95.7%, transparent 95.7%) no-repeat center;
   background-size: 100% 80.0%;
   color: white;
 }
-#T_6db8f_row2_col6 {
+#T_e518b_row2_col6 {
   width: 10em;
   background: linear-gradient(90deg, forestgreen 65.7%, transparent 65.7%) no-repeat center;
   background-size: 100% 80.0%;
   color: white;
 }
-#T_6db8f_row2_col7 {
+#T_e518b_row2_col7 {
   width: 10em;
   background: linear-gradient(90deg, forestgreen 77.9%, transparent 77.9%) no-repeat center;
   background-size: 100% 80.0%;
   color: white;
 }
 </style>
-<table id="T_6db8f" style="margin-left:auto;margin-right:auto;">
+<table id="T_e518b" style="margin-left:auto;margin-right:auto;">
 <thead>
 <tr>
-<th class="col_heading level0 col0" id="T_6db8f_level0_col0"></th>
-<th class="col_heading level0 col1" colspan="4" id="T_6db8f_level0_col1">Count</th>
-<th class="col_heading level0 col5" colspan="3" id="T_6db8f_level0_col5">Scores</th>
+<th class="col_heading level0 col0" id="T_e518b_level0_col0"></th>
+<th class="col_heading level0 col1" colspan="4" id="T_e518b_level0_col1">Count</th>
+<th class="col_heading level0 col5" colspan="3" id="T_e518b_level0_col5">Scores</th>
 </tr>
 <tr>
-<th class="col_heading level1 col0" id="T_6db8f_level1_col0">Model</th>
-<th class="col_heading level1 col1" id="T_6db8f_level1_col1">True Negative</th>
-<th class="col_heading level1 col2" id="T_6db8f_level1_col2">False Negative</th>
-<th class="col_heading level1 col3" id="T_6db8f_level1_col3">True Positive</th>
-<th class="col_heading level1 col4" id="T_6db8f_level1_col4">False Positive</th>
-<th class="col_heading level1 col5" id="T_6db8f_level1_col5">Precision</th>
-<th class="col_heading level1 col6" id="T_6db8f_level1_col6">Recall</th>
-<th class="col_heading level1 col7" id="T_6db8f_level1_col7">F1</th>
+<th class="col_heading level1 col0" id="T_e518b_level1_col0">Model</th>
+<th class="col_heading level1 col1" id="T_e518b_level1_col1">True Negative</th>
+<th class="col_heading level1 col2" id="T_e518b_level1_col2">False Negative</th>
+<th class="col_heading level1 col3" id="T_e518b_level1_col3">True Positive</th>
+<th class="col_heading level1 col4" id="T_e518b_level1_col4">False Positive</th>
+<th class="col_heading level1 col5" id="T_e518b_level1_col5">Precision</th>
+<th class="col_heading level1 col6" id="T_e518b_level1_col6">Recall</th>
+<th class="col_heading level1 col7" id="T_e518b_level1_col7">F1</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td class="data row0 col0" id="T_6db8f_row0_col0">gpt-4o</td>
-<td class="data row0 col1" id="T_6db8f_row0_col1">927</td>
-<td class="data row0 col2" id="T_6db8f_row0_col2">17</td>
-<td class="data row0 col3" id="T_6db8f_row0_col3">50</td>
-<td class="data row0 col4" id="T_6db8f_row0_col4">6</td>
-<td class="data row0 col5" id="T_6db8f_row0_col5">89%</td>
-<td class="data row0 col6" id="T_6db8f_row0_col6">75%</td>
-<td class="data row0 col7" id="T_6db8f_row0_col7">81%</td>
+<td class="data row0 col0" id="T_e518b_row0_col0">gpt-4o</td>
+<td class="data row0 col1" id="T_e518b_row0_col1">927</td>
+<td class="data row0 col2" id="T_e518b_row0_col2">17</td>
+<td class="data row0 col3" id="T_e518b_row0_col3">50</td>
+<td class="data row0 col4" id="T_e518b_row0_col4">6</td>
+<td class="data row0 col5" id="T_e518b_row0_col5">89%</td>
+<td class="data row0 col6" id="T_e518b_row0_col6">75%</td>
+<td class="data row0 col7" id="T_e518b_row0_col7">81%</td>
 </tr>
 <tr>
-<td class="data row1 col0" id="T_6db8f_row1_col0">gpt-4o-mini</td>
-<td class="data row1 col1" id="T_6db8f_row1_col1">925</td>
-<td class="data row1 col2" id="T_6db8f_row1_col2">31</td>
-<td class="data row1 col3" id="T_6db8f_row1_col3">36</td>
-<td class="data row1 col4" id="T_6db8f_row1_col4">8</td>
-<td class="data row1 col5" id="T_6db8f_row1_col5">82%</td>
-<td class="data row1 col6" id="T_6db8f_row1_col6">54%</td>
-<td class="data row1 col7" id="T_6db8f_row1_col7">65%</td>
+<td class="data row1 col0" id="T_e518b_row1_col0">gpt-4o-mini</td>
+<td class="data row1 col1" id="T_e518b_row1_col1">925</td>
+<td class="data row1 col2" id="T_e518b_row1_col2">31</td>
+<td class="data row1 col3" id="T_e518b_row1_col3">36</td>
+<td class="data row1 col4" id="T_e518b_row1_col4">8</td>
+<td class="data row1 col5" id="T_e518b_row1_col5">82%</td>
+<td class="data row1 col6" id="T_e518b_row1_col6">54%</td>
+<td class="data row1 col7" id="T_e518b_row1_col7">65%</td>
 </tr>
 <tr>
-<td class="data row2 col0" id="T_6db8f_row2_col0">gpt-4o-mini ft</td>
-<td class="data row2 col1" id="T_6db8f_row2_col1">931</td>
-<td class="data row2 col2" id="T_6db8f_row2_col2">23</td>
-<td class="data row2 col3" id="T_6db8f_row2_col3">44</td>
-<td class="data row2 col4" id="T_6db8f_row2_col4">2</td>
-<td class="data row2 col5" id="T_6db8f_row2_col5">96%</td>
-<td class="data row2 col6" id="T_6db8f_row2_col6">66%</td>
-<td class="data row2 col7" id="T_6db8f_row2_col7">78%</td>
+<td class="data row2 col0" id="T_e518b_row2_col0">gpt-4o-mini ft</td>
+<td class="data row2 col1" id="T_e518b_row2_col1">931</td>
+<td class="data row2 col2" id="T_e518b_row2_col2">23</td>
+<td class="data row2 col3" id="T_e518b_row2_col3">44</td>
+<td class="data row2 col4" id="T_e518b_row2_col4">2</td>
+<td class="data row2 col5" id="T_e518b_row2_col5">96%</td>
+<td class="data row2 col6" id="T_e518b_row2_col6">66%</td>
+<td class="data row2 col7" id="T_e518b_row2_col7">78%</td>
 </tr>
 </tbody>
 </table>
@@ -8210,7 +8201,7 @@ a.anchor-link {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<p>Mean prediction confidence also rose steadily as we moved from the base models to the fine-tuned one, reaching 0.996 after fine-tuning (compared with 0.988 for base gpt-4o and 0.993 for base gpt-4o-mini). This suggests that fine-tuning produces a model that is not only more accurate, but also more confident in its decisions.</p>
+<p>Only days after completing this article, we learned that OpenAI was discontinuing its gpt-4o and gpt-4o-mini models, less than two years after they first went live. This provided a final lesson for our article. The world of LLM development is running at breakneck pace, with flagship models failing to outlive the average gerbil. For our Python pipeline, this was not a problem as we can slot in alternative models simply enough. For the fine-tuning aspect this was more of a problem, as you are working to tune a specific LLM, and that LLM may not always be around.</p>
 </div>
 </div>
 </div>
@@ -8226,7 +8217,8 @@ a.anchor-link {
 <li>Base models already handle nuanced medical text well</li>
 <li>Confidence scores help identify where human review adds the most value</li>
 <li>Logit bias can steer outputs, but comes with trade-offs</li>
-<li>Fine-tuning allows smaller models to punch well above their weight</li>
+<li>Fine-tuning allows smaller models to punch well above their weight.</li>
+<li>Don't get too attached to a single model as it may not be around forever.</li>
 </ul>
 <p>LLMs can help actuaries handle large volumes of routine work and freeing them to focus on interpretation, validation, and decision-making. The real opportunity is not just to automate existing processes, but to rethink how actuarial data pipelines are built in the first place.</p>
 </div>
