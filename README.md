@@ -1,6 +1,6 @@
 # LLMClassifier
 
-Python code behind the article "Machine Clean: how to use LLMs to wrangle messy datasets" submitted to The Actuary (found here: tbc).
+Python code behind the article "Machine Clean: how to use LLMs to wrangle messy datasets" submitted to The Actuary (found here: https://www.theactuary.com/2026/03/16/machine-clean-using-large-language-models-tidy-datasets).
 
 If you are interested in  using the techniques in the article, the class `LLMClassifier` can be used. This is a versatile class for classifying datasets into disctinct categories. It also produces a confidence score for each guess in the output. This is found in `LLMClassifier.py`.
 
